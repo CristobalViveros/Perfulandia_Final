@@ -1,0 +1,51 @@
+2026-06-09T11:48:45.102-04:00  INFO 21392 --- [boletas_ms] [restartedMain] c.example.boleta_ms.BoletaMsApplication  : Starting BoletaMsApplication using Java 21.0.10 with PID 21392 (C:\Users\Duoc\Downloads\boleta_ms\target\classes started by Duoc in C:\Users\Duoc\Downloads\boleta_ms)
+2026-06-09T11:48:45.106-04:00  INFO 21392 --- [boletas_ms] [restartedMain] c.example.boleta_ms.BoletaMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-09T11:48:45.168-04:00  INFO 21392 --- [boletas_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-09T11:48:45.171-04:00  INFO 21392 --- [boletas_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-09T11:48:46.086-04:00  INFO 21392 --- [boletas_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-09T11:48:46.145-04:00  INFO 21392 --- [boletas_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2026-06-09T11:48:46.432-04:00  INFO 21392 --- [boletas_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6b7da08c-28f6-393e-83cc-171504310d2c
+2026-06-09T11:48:47.045-04:00  INFO 21392 --- [boletas_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8090 (http)
+2026-06-09T11:48:47.071-04:00  INFO 21392 --- [boletas_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-09T11:48:47.072-04:00  INFO 21392 --- [boletas_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-09T11:48:47.152-04:00  INFO 21392 --- [boletas_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1980 ms
+2026-06-09T11:48:47.381-04:00  INFO 21392 --- [boletas_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-09T11:48:47.453-04:00  INFO 21392 --- [boletas_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-09T11:48:47.978-04:00  INFO 21392 --- [boletas_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-09T11:48:48.004-04:00  INFO 21392 --- [boletas_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-09T11:48:51.614-04:00  INFO 21392 --- [boletas_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@284ba1f0
+2026-06-09T11:48:51.616-04:00  INFO 21392 --- [boletas_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-09T11:48:51.659-04:00  WARN 21392 --- [boletas_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-09T11:48:51.663-04:00  WARN 21392 --- [boletas_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-09T11:48:51.680-04:00  INFO 21392 --- [boletas_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/boletas_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: boletas_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-09T11:48:52.303-04:00  INFO 21392 --- [boletas_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-09T11:48:52.346-04:00  INFO 21392 --- [boletas_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-09T11:48:52.425-04:00  INFO 21392 --- [boletas_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-09T11:48:52.634-04:00  WARN 21392 --- [boletas_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-09T11:48:52.739-04:00  INFO 21392 --- [boletas_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-09T11:48:53.472-04:00  INFO 21392 --- [boletas_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8090 (http) with context path '/'
+2026-06-09T11:48:53.487-04:00  INFO 21392 --- [boletas_ms] [restartedMain] c.example.boleta_ms.BoletaMsApplication  : Started BoletaMsApplication in 8.904 seconds (process running for 13.117)
+2026-06-09T11:49:51.844-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-09T11:49:51.845-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-09T11:49:51.846-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-09T11:50:11.361-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-3] c.e.boleta_ms.service.BoletaServiceImpl  : Listando todas las boletas
+2026-06-09T11:53:58.014-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-7] c.e.boleta_ms.service.BoletaServiceImpl  : Iniciando creación de boleta para pedidoId=28, clienteId=28, pagoId=189
+2026-06-09T11:53:58.377-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-7] c.e.boleta_ms.service.BoletaServiceImpl  : Boleta creada correctamente con id=11
+2026-06-09T11:54:02.800-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-8] c.e.boleta_ms.service.BoletaServiceImpl  : Listando todas las boletas
+2026-06-09T11:56:15.173-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-10] c.e.boleta_ms.service.BoletaServiceImpl  : Iniciando actualización de boleta id=5
+2026-06-09T11:56:15.189-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-10] c.e.boleta_ms.service.BoletaServiceImpl  : Boleta actualizada correctamente con id=5
+2026-06-09T11:56:20.237-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-1] c.e.boleta_ms.service.BoletaServiceImpl  : Listando todas las boletas
+2026-06-09T11:58:38.343-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-5] c.e.boleta_ms.service.BoletaServiceImpl  : Intentando eliminar boleta id=5
+2026-06-09T11:58:38.395-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-5] c.e.boleta_ms.service.BoletaServiceImpl  : Boleta eliminada correctamente con id=5
+2026-06-09T11:58:47.043-04:00  INFO 21392 --- [boletas_ms] [http-nio-8090-exec-6] c.e.boleta_ms.service.BoletaServiceImpl  : Listando todas las boletas
