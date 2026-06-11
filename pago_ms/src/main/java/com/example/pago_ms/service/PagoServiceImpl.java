@@ -9,6 +9,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.example.pago_ms.client.PedidoClient;
+import com.example.pago_ms.clientdto.PedidoClientDTO;
 import com.example.pago_ms.dto.PagoRequestDTO;
 import com.example.pago_ms.dto.PagoResponseDTO;
 import com.example.pago_ms.exception.BadRequestException;
@@ -17,6 +19,8 @@ import com.example.pago_ms.exception.ResourceNotFoundException;
 import com.example.pago_ms.model.Pago;
 import com.example.pago_ms.repository.PagoRepository;
 
+import feign.FeignException;
+
 @Service
 @Transactional
 public class PagoServiceImpl implements PagoService {
@@ -24,9 +28,14 @@ public class PagoServiceImpl implements PagoService {
     private static final Logger logger = LoggerFactory.getLogger(PagoServiceImpl.class);
 
     private final PagoRepository pagoRepository;
+    private final PedidoClient pedidoClient;
 
-    public PagoServiceImpl(PagoRepository pagoRepository) {
+    
+    public PagoServiceImpl(
+            PagoRepository pagoRepository,
+            PedidoClient pedidoClient) {
         this.pagoRepository = pagoRepository;
+        this.pedidoClient = pedidoClient;
     }
 
     @Override
@@ -34,6 +43,7 @@ public class PagoServiceImpl implements PagoService {
         logger.info("Iniciando creación de pago para pedidoId={}", dto.pedidoId());
 
         validarMonto(dto.monto());
+        validarPedidoExterno(dto);
 
         if (pagoRepository.existsByPedidoId(dto.pedidoId())) {
             logger.warn("Intento de crear pago duplicado para pedidoId={}", dto.pedidoId());
@@ -58,6 +68,7 @@ public class PagoServiceImpl implements PagoService {
         logger.info("Procesando pago para pedidoId={}", dto.pedidoId());
 
         validarMonto(dto.monto());
+        validarPedidoExterno(dto);
 
         if (pagoRepository.existsByPedidoId(dto.pedidoId())) {
             logger.warn("Intento de procesar pago duplicado para pedidoId={}", dto.pedidoId());
@@ -138,6 +149,7 @@ public class PagoServiceImpl implements PagoService {
         logger.info("Iniciando actualización de pago id={}", id);
 
         validarMonto(dto.monto());
+        validarPedidoExterno(dto);
 
         Pago pago = pagoRepository.findById(id)
                 .orElseThrow(() -> {
@@ -175,6 +187,30 @@ public class PagoServiceImpl implements PagoService {
         pagoRepository.deleteById(id);
 
         logger.info("Pago eliminado correctamente con id={}", id);
+    }
+
+    private void validarPedidoExterno(PagoRequestDTO dto) {
+        try {
+            PedidoClientDTO pedido = pedidoClient.obtenerPedidoPorId(dto.pedidoId());
+
+            if ("CANCELADO".equalsIgnoreCase(pedido.estado())) {
+                throw new BadRequestException("No se puede registrar pago para un pedido cancelado");
+            }
+
+            if (pedido.total() != null && pedido.total().compareTo(dto.monto()) != 0) {
+                throw new BadRequestException("El monto del pago no coincide con el total del pedido");
+            }
+
+        } catch (FeignException.NotFound ex) {
+            logger.warn("Pedido no encontrado al crear/procesar pago", ex);
+            throw new ResourceNotFoundException("No se encontró el pedido asociado al pago");
+        } catch (FeignException.Unauthorized ex) {
+            logger.warn("No autorizado al consultar pedido_ms", ex);
+            throw new BadRequestException("No autorizado al consultar pedido_ms");
+        } catch (FeignException ex) {
+            logger.error("Error Feign al comunicarse con pedido_ms. Status={}", ex.status(), ex);
+            throw new BadRequestException("Error al comunicarse con pedido_ms: " + ex.status());
+        }
     }
 
     private void validarMonto(BigDecimal monto) {

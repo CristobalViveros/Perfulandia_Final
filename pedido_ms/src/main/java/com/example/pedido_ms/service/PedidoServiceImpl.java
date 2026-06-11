@@ -18,6 +18,17 @@ import com.example.pedido_ms.model.DetallePedido;
 import com.example.pedido_ms.model.Pedido;
 import com.example.pedido_ms.repository.PedidoRepository;
 
+import com.example.pedido_ms.client.ClienteClient;
+import com.example.pedido_ms.client.ProductoClient;
+import com.example.pedido_ms.client.InventarioClient;
+
+import com.example.pedido_ms.clientdto.ClienteClientDTO;
+import com.example.pedido_ms.clientdto.ProductoClientDTO;
+import com.example.pedido_ms.clientdto.InventarioClientDTO;
+
+import feign.FeignException;
+
+
 @Service
 @Transactional
 public class PedidoServiceImpl implements PedidoService {
@@ -25,9 +36,21 @@ public class PedidoServiceImpl implements PedidoService {
     private static final Logger logger = LoggerFactory.getLogger(PedidoServiceImpl.class);
 
     private final PedidoRepository pedidoRepository;
+    private final ClienteClient clienteClient;
+    private final ProductoClient productoClient;
+    private final InventarioClient inventarioClient;
 
-    public PedidoServiceImpl(PedidoRepository pedidoRepository) {
+
+    
+    public PedidoServiceImpl(
+            PedidoRepository pedidoRepository,
+            ClienteClient clienteClient,
+            ProductoClient productoClient,
+            InventarioClient inventarioClient) {
         this.pedidoRepository = pedidoRepository;
+        this.clienteClient = clienteClient;
+        this.productoClient = productoClient;
+        this.inventarioClient = inventarioClient;
     }
 
     @Override
@@ -35,6 +58,7 @@ public class PedidoServiceImpl implements PedidoService {
         logger.info("Iniciando creación de pedido para clienteId={}", dto.clienteId());
 
         validarDetalles(dto);
+        validarReferenciasExternas(dto);
 
         Pedido pedido = new Pedido();
         pedido.setClienteId(dto.clienteId());
@@ -112,6 +136,7 @@ public class PedidoServiceImpl implements PedidoService {
         logger.info("Iniciando actualización de pedido id={}", id);
 
         validarDetalles(dto);
+        validarReferenciasExternas(dto);
 
         Pedido pedido = pedidoRepository.findById(id)
                 .orElseThrow(() -> {
@@ -178,6 +203,49 @@ public class PedidoServiceImpl implements PedidoService {
         pedidoRepository.deleteById(id);
 
         logger.info("Pedido eliminado correctamente con id={}", id);
+    }
+
+    private void validarReferenciasExternas(PedidoRequestDTO dto) {
+        try {
+            ClienteClientDTO cliente = clienteClient.obtenerClientePorId(dto.clienteId());
+
+            if (cliente.activo() != null && !cliente.activo()) {
+                throw new BadRequestException("El cliente asociado al pedido está inactivo");
+            }
+
+            dto.detalles().forEach(detalle -> {
+                ProductoClientDTO producto = productoClient.obtenerProductoPorId(detalle.productoId());
+
+                if (!"ACTIVO".equalsIgnoreCase(producto.estado())) {
+                    throw new BadRequestException("El producto con id " + detalle.productoId() + " no está activo");
+                }
+
+                if (producto.precio() != null && producto.precio().compareTo(detalle.precioUnitario()) != 0) {
+                    throw new BadRequestException("El precio unitario del producto " + detalle.productoId()
+                            + " no coincide con el precio registrado");
+                }
+
+                InventarioClientDTO inventario = inventarioClient.obtenerInventarioPorProducto(detalle.productoId());
+
+                if (inventario.stockActual() == null || inventario.stockActual() < detalle.cantidad()) {
+                    throw new BadRequestException("Stock insuficiente para el producto con id " + detalle.productoId());
+                }
+
+                if ("SIN_STOCK".equalsIgnoreCase(inventario.estado())) {
+                    throw new BadRequestException("El producto con id " + detalle.productoId() + " está sin stock");
+                }
+            });
+
+        } catch (FeignException.NotFound ex) {
+            logger.warn("Referencia externa no encontrada al crear/actualizar pedido", ex);
+            throw new ResourceNotFoundException("No se encontró cliente, producto o inventario asociado");
+        } catch (FeignException.Unauthorized ex) {
+            logger.warn("No autorizado al consultar otro microservicio", ex);
+            throw new BadRequestException("No autorizado al consultar otro microservicio");
+        } catch (FeignException ex) {
+            logger.error("Error Feign al comunicarse con otro microservicio. Status={}", ex.status(), ex);
+            throw new BadRequestException("Error al comunicarse con otro microservicio: " + ex.status());
+        }
     }
 
     private void validarDetalles(PedidoRequestDTO dto) {

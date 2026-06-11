@@ -1,0 +1,46 @@
+2026-06-11T12:04:27.778-04:00  INFO 15512 --- [inventario_ms] [restartedMain] c.e.i.InventarioMsApplication            : Starting InventarioMsApplication using Java 21.0.10 with PID 15512 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\inventario_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:04:27.781-04:00 DEBUG 15512 --- [inventario_ms] [restartedMain] c.e.i.InventarioMsApplication            : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:04:27.782-04:00  INFO 15512 --- [inventario_ms] [restartedMain] c.e.i.InventarioMsApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:04:27.847-04:00  INFO 15512 --- [inventario_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-11T12:04:27.848-04:00  INFO 15512 --- [inventario_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-11T12:04:28.977-04:00  INFO 15512 --- [inventario_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:04:29.043-04:00  INFO 15512 --- [inventario_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2026-06-11T12:04:29.278-04:00  INFO 15512 --- [inventario_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=45d5ef40-f2a1-3153-9f62-d6bdc7da2543
+2026-06-11T12:04:29.961-04:00  INFO 15512 --- [inventario_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8085 (http)
+2026-06-11T12:04:29.978-04:00  INFO 15512 --- [inventario_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:04:29.979-04:00  INFO 15512 --- [inventario_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:04:30.055-04:00  INFO 15512 --- [inventario_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2206 ms
+2026-06-11T12:04:30.377-04:00  INFO 15512 --- [inventario_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:04:30.467-04:00  INFO 15512 --- [inventario_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T12:04:30.990-04:00  INFO 15512 --- [inventario_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:04:31.021-04:00  INFO 15512 --- [inventario_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T12:04:31.202-04:00  INFO 15512 --- [inventario_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6de591b4
+2026-06-11T12:04:31.205-04:00  INFO 15512 --- [inventario_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T12:04:31.243-04:00  WARN 15512 --- [inventario_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:04:31.246-04:00  WARN 15512 --- [inventario_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:04:31.267-04:00  INFO 15512 --- [inventario_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:04:31.985-04:00  INFO 15512 --- [inventario_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:04:32.104-04:00  INFO 15512 --- [inventario_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:04:32.188-04:00  INFO 15512 --- [inventario_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T12:04:32.529-04:00  WARN 15512 --- [inventario_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:04:32.637-04:00  INFO 15512 --- [inventario_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:04:33.629-04:00  INFO 15512 --- [inventario_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8085 (http) with context path '/'
+2026-06-11T12:04:33.648-04:00  INFO 15512 --- [inventario_ms] [restartedMain] c.e.i.InventarioMsApplication            : Started InventarioMsApplication in 6.415 seconds (process running for 7.266)
+2026-06-11T12:04:33.656-04:00  WARN 15512 --- [inventario_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:04:33.657-04:00  WARN 15512 --- [inventario_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:05:29.536-04:00  INFO 15512 --- [inventario_ms] [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T12:05:29.537-04:00  INFO 15512 --- [inventario_ms] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T12:05:29.539-04:00  INFO 15512 --- [inventario_ms] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-11T12:05:29.730-04:00  INFO 15512 --- [inventario_ms] [http-nio-8085-exec-2] c.e.i.service.InventarioServiceImpl      : Buscando inventario por productoId=5
+2026-06-11T12:06:03.385-04:00  INFO 15512 --- [inventario_ms] [http-nio-8085-exec-3] c.e.i.service.InventarioServiceImpl      : Buscando inventario por productoId=5
