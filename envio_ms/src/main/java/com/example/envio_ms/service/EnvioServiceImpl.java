@@ -15,6 +15,16 @@ import com.example.envio_ms.exception.ResourceNotFoundException;
 import com.example.envio_ms.model.Envio;
 import com.example.envio_ms.repository.EnvioRepository;
 
+import com.example.envio_ms.client.ClienteClient;
+import com.example.envio_ms.client.PedidoClient;
+import com.example.envio_ms.clientdto.ClienteClientDTO;
+import com.example.envio_ms.clientdto.PedidoClientDTO;
+
+import com.example.envio_ms.exception.BadRequestException;
+
+import feign.FeignException;
+
+
 @Service
 @Transactional
 public class EnvioServiceImpl implements EnvioService {
@@ -22,10 +32,20 @@ public class EnvioServiceImpl implements EnvioService {
     private static final Logger logger = LoggerFactory.getLogger(EnvioServiceImpl.class);
 
     private final EnvioRepository envioRepository;
+    private final ClienteClient clienteClient;
+    private final PedidoClient pedidoClient;
 
-    public EnvioServiceImpl(EnvioRepository envioRepository) {
+
+    
+    public EnvioServiceImpl(
+            EnvioRepository envioRepository,
+            ClienteClient clienteClient,
+            PedidoClient pedidoClient) {
         this.envioRepository = envioRepository;
+        this.clienteClient = clienteClient;
+        this.pedidoClient = pedidoClient;
     }
+
 
     @Override
     public EnvioResponseDTO crearEnvio(EnvioRequestDTO dto) {
@@ -35,6 +55,8 @@ public class EnvioServiceImpl implements EnvioService {
             logger.warn("Intento de crear envío duplicado para pedidoId={}", dto.pedidoId());
             throw new DuplicateResourceException("Ya existe un envío asociado a ese pedido");
         }
+
+        validarReferenciasExternas(dto);
 
         LocalDateTime ahora = LocalDateTime.now();
 
@@ -134,6 +156,8 @@ public class EnvioServiceImpl implements EnvioService {
             }
         });
 
+        validarReferenciasExternas(dto);
+
         envio.setPedidoId(dto.pedidoId());
         envio.setClienteId(dto.clienteId());
         envio.setDireccionEntrega(dto.direccionEntrega().trim());
@@ -182,6 +206,36 @@ public class EnvioServiceImpl implements EnvioService {
         envioRepository.deleteById(id);
 
         logger.info("Envío eliminado correctamente con id={}", id);
+    }
+
+
+    private void validarReferenciasExternas(EnvioRequestDTO dto) {
+        try {
+            ClienteClientDTO cliente = clienteClient.obtenerClientePorId(dto.clienteId());
+            PedidoClientDTO pedido = pedidoClient.obtenerPedidoPorId(dto.pedidoId());
+
+            if (cliente.activo() != null && !cliente.activo()) {
+                throw new BadRequestException("El cliente asociado al envío está inactivo");
+            }
+
+            if (pedido.clienteId() == null || !pedido.clienteId().equals(dto.clienteId())) {
+                throw new BadRequestException("El pedido no pertenece al cliente indicado");
+            }
+
+            if (!"CONFIRMADO".equalsIgnoreCase(pedido.estado())) {
+                throw new BadRequestException("No se puede crear envío porque el pedido no está confirmado");
+            }
+
+        } catch (FeignException.NotFound ex) {
+            logger.warn("Cliente o pedido no encontrado al crear/actualizar envío", ex);
+            throw new ResourceNotFoundException("No se encontró cliente o pedido asociado al envío");
+        } catch (FeignException.Unauthorized ex) {
+            logger.warn("No autorizado al consultar otro microservicio", ex);
+            throw new BadRequestException("No autorizado al consultar otro microservicio");
+        } catch (FeignException ex) {
+            logger.error("Error Feign al comunicarse con otro microservicio. Status={}", ex.status(), ex);
+            throw new BadRequestException("Error al comunicarse con otro microservicio: " + ex.status());
+        }
     }
 
     private EnvioResponseDTO mapToResponseDTO(Envio envio) {

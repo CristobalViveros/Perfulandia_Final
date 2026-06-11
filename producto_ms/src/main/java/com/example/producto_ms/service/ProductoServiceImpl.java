@@ -16,6 +16,14 @@ import com.example.producto_ms.exception.ResourceNotFoundException;
 import com.example.producto_ms.model.Producto;
 import com.example.producto_ms.repository.ProductoRepository;
 
+
+import com.example.producto_ms.client.CategoriaClient;
+import com.example.producto_ms.client.ProveedorClient;
+import com.example.producto_ms.clientdto.CategoriaClientDTO;
+import com.example.producto_ms.clientdto.ProveedorClientDTO;
+
+import feign.FeignException;
+
 @Service
 @Transactional
 public class ProductoServiceImpl implements ProductoService {
@@ -23,9 +31,18 @@ public class ProductoServiceImpl implements ProductoService {
     private static final Logger logger = LoggerFactory.getLogger(ProductoServiceImpl.class);
 
     private final ProductoRepository productoRepository;
+    private final CategoriaClient categoriaClient;
+    private final ProveedorClient proveedorClient;
 
-    public ProductoServiceImpl(ProductoRepository productoRepository) {
+
+    
+    public ProductoServiceImpl(
+            ProductoRepository productoRepository,
+            CategoriaClient categoriaClient,
+            ProveedorClient proveedorClient) {
         this.productoRepository = productoRepository;
+        this.categoriaClient = categoriaClient;
+        this.proveedorClient = proveedorClient;
     }
 
     @Override
@@ -40,6 +57,8 @@ public class ProductoServiceImpl implements ProductoService {
             logger.warn("Intento de crear producto duplicado con nombre={}", nombreNormalizado);
             throw new DuplicateResourceException("Ya existe un producto con ese nombre");
         }
+
+        validarReferenciasExternas(dto);
 
         Producto producto = new Producto();
         producto.setNombre(nombreNormalizado);
@@ -136,6 +155,8 @@ public class ProductoServiceImpl implements ProductoService {
             }
         });
 
+        validarReferenciasExternas(dto);
+
         producto.setNombre(nuevoNombre);
         producto.setDescripcion(dto.descripcion());
         producto.setPrecio(dto.precio());
@@ -163,6 +184,39 @@ public class ProductoServiceImpl implements ProductoService {
         productoRepository.deleteById(id);
 
         logger.info("Producto eliminado correctamente con id={}", id);
+    }
+
+    private void validarReferenciasExternas(ProductoRequestDTO dto) {
+        try {
+            CategoriaClientDTO categoria = categoriaClient.obtenerCategoriaPorId(dto.categoriaId());
+
+            if (!esEstadoActivo(categoria.estado())) {
+                throw new BadRequestException("La categoría asociada al producto no está activa");
+            }
+
+            if (dto.proveedorId() != null) {
+                ProveedorClientDTO proveedor = proveedorClient.obtenerProveedorPorId(dto.proveedorId());
+
+                if (!esEstadoActivo(proveedor.estado())) {
+                    throw new BadRequestException("El proveedor asociado al producto no está activo");
+                }
+            }
+
+        } catch (FeignException.NotFound ex) {
+            logger.warn("Referencia externa no encontrada al crear/actualizar producto", ex);
+            throw new ResourceNotFoundException("No se encontró categoría o proveedor asociado");
+        } catch (FeignException.Unauthorized ex) {
+            logger.warn("No autorizado al consultar otro microservicio", ex);
+            throw new BadRequestException("No autorizado al consultar otro microservicio");
+        } catch (FeignException ex) {
+            logger.error("Error Feign al comunicarse con otro microservicio. Status={}", ex.status(), ex);
+            throw new BadRequestException("Error al comunicarse con otro microservicio: " + ex.status());
+        }
+    }
+
+    private boolean esEstadoActivo(String estado) {
+        return estado != null &&
+                ("ACTIVO".equalsIgnoreCase(estado) || "ACTIVA".equalsIgnoreCase(estado));
     }
 
     private void validarPrecio(BigDecimal precio) {

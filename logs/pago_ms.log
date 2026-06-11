@@ -44,3 +44,623 @@
 2026-06-10T20:22:52.668-04:00  INFO 5628 --- [pago_ms] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2026-06-10T20:22:52.918-04:00  INFO 5628 --- [pago_ms] [http-nio-8088-exec-1] c.e.pago_ms.service.PagoServiceImpl      : Buscando pago por id=6
 2026-06-10T20:24:31.060-04:00  INFO 5628 --- [pago_ms] [http-nio-8088-exec-5] c.e.pago_ms.service.PagoServiceImpl      : Buscando pago por id=6
+2026-06-11T11:10:33.389-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:10:33.393-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T11:10:33.394-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:10:33.455-04:00  INFO 13856 --- [pago_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-11T11:10:33.456-04:00  INFO 13856 --- [pago_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-11T11:10:34.612-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:10:34.677-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2026-06-11T11:10:34.911-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c5944b24-e234-3074-999d-c2cf346a9e0e
+2026-06-11T11:10:35.665-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T11:10:35.681-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:10:35.682-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:10:35.781-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2324 ms
+2026-06-11T11:10:36.066-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:10:36.158-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T11:10:36.655-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:10:36.683-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T11:10:36.839-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b5aeab1
+2026-06-11T11:10:36.841-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T11:10:36.882-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:10:36.886-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:10:36.910-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:10:37.572-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:10:37.697-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:10:37.785-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T11:10:38.063-04:00  WARN 13856 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:10:38.149-04:00  INFO 13856 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:10:38.966-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T11:10:38.983-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 6.137 seconds (process running for 6.953)
+2026-06-11T11:10:38.987-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:10:38.988-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:17:37.765-04:00  INFO 13856 --- [pago_ms] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T11:17:37.765-04:00  INFO 13856 --- [pago_ms] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T11:17:37.767-04:00  INFO 13856 --- [pago_ms] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-11T11:17:37.966-04:00  INFO 13856 --- [pago_ms] [http-nio-8088-exec-1] c.e.pago_ms.service.PagoServiceImpl      : Buscando pago por id=6
+2026-06-11T12:12:45.526-04:00  INFO 13856 --- [pago_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T12:12:45.534-04:00  INFO 13856 --- [pago_ms] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T12:12:45.545-04:00  INFO 13856 --- [pago_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T12:12:45.550-04:00  INFO 13856 --- [pago_ms] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:12:45.557-04:00  INFO 13856 --- [pago_ms] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-11T12:12:45.561-04:00  INFO 13856 --- [pago_ms] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-11T12:12:45.716-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:12:45.717-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:12:45.718-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:12:45.966-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:12:45.981-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-06-11T12:12:46.056-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c5944b24-e234-3074-999d-c2cf346a9e0e
+2026-06-11T12:12:46.125-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:12:46.126-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:12:46.127-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:12:46.166-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 445 ms
+2026-06-11T12:12:46.205-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:12:46.243-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:12:46.245-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-11T12:12:46.251-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36f11ff0
+2026-06-11T12:12:46.252-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-11T12:12:46.256-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:12:46.257-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:12:46.258-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:12:46.309-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:12:46.397-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:12:46.478-04:00  WARN 13856 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:12:46.502-04:00  INFO 13856 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:12:46.659-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T12:12:46.670-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 0.996 seconds (process running for 3734.64)
+2026-06-11T12:12:46.672-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:12:46.672-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:12:46.674-04:00  INFO 13856 --- [pago_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:13:01.295-04:00  INFO 13856 --- [pago_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T12:13:01.297-04:00  INFO 13856 --- [pago_ms] [Thread-7] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T12:13:01.304-04:00  INFO 13856 --- [pago_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T12:13:01.308-04:00  INFO 13856 --- [pago_ms] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:13:01.308-04:00  INFO 13856 --- [pago_ms] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-06-11T12:13:01.312-04:00  INFO 13856 --- [pago_ms] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-06-11T12:13:01.415-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:13:01.416-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:13:01.416-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:13:01.604-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:13:01.617-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2026-06-11T12:13:01.662-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c5944b24-e234-3074-999d-c2cf346a9e0e
+2026-06-11T12:13:01.713-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:13:01.714-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:13:01.715-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:13:01.753-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 334 ms
+2026-06-11T12:13:01.782-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:13:01.807-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:13:01.809-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-11T12:13:01.813-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25c2315f
+2026-06-11T12:13:01.813-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-11T12:13:01.815-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:13:01.816-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:13:01.817-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:13:01.855-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:13:01.948-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:13:02.011-04:00  WARN 13856 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:13:02.032-04:00  INFO 13856 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:13:02.197-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T12:13:02.207-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 0.827 seconds (process running for 3750.178)
+2026-06-11T12:13:02.209-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:13:02.210-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:13:02.213-04:00  INFO 13856 --- [pago_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:13:06.646-04:00  INFO 13856 --- [pago_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T12:13:06.648-04:00  INFO 13856 --- [pago_ms] [Thread-13] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T12:13:06.656-04:00  INFO 13856 --- [pago_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T12:13:06.658-04:00  INFO 13856 --- [pago_ms] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:13:06.659-04:00  INFO 13856 --- [pago_ms] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-06-11T12:13:06.663-04:00  INFO 13856 --- [pago_ms] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-06-11T12:13:06.764-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:13:06.765-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:13:06.765-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:13:06.946-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:13:06.956-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2026-06-11T12:13:06.998-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53114368-d087-3feb-8370-c5040d528b04
+2026-06-11T12:13:07.046-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:13:07.048-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:13:07.048-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:13:07.087-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 320 ms
+2026-06-11T12:13:07.116-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:13:07.141-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:13:07.142-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-11T12:13:07.146-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@519c75b2
+2026-06-11T12:13:07.147-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-11T12:13:07.148-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:13:07.149-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:13:07.150-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:13:07.191-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:13:07.280-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:13:07.348-04:00  WARN 13856 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:13:07.370-04:00  INFO 13856 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:13:07.492-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T12:13:07.500-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 0.772 seconds (process running for 3755.47)
+2026-06-11T12:13:07.503-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:13:07.503-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:13:07.504-04:00  INFO 13856 --- [pago_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:13:57.871-04:00  INFO 13856 --- [pago_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T12:13:57.873-04:00  INFO 13856 --- [pago_ms] [Thread-19] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T12:13:57.884-04:00  INFO 13856 --- [pago_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T12:13:57.886-04:00  INFO 13856 --- [pago_ms] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:13:57.888-04:00  INFO 13856 --- [pago_ms] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-06-11T12:13:57.890-04:00  INFO 13856 --- [pago_ms] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-06-11T12:13:57.988-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:13:57.989-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:13:57.989-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:13:58.185-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:13:58.198-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-06-11T12:13:58.261-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53114368-d087-3feb-8370-c5040d528b04
+2026-06-11T12:13:58.324-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:13:58.325-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:13:58.326-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:13:58.365-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 374 ms
+2026-06-11T12:13:58.394-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:13:58.424-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:13:58.426-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-06-11T12:13:58.433-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64c80f7e
+2026-06-11T12:13:58.434-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-06-11T12:13:58.436-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:13:58.437-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:13:58.438-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:13:58.491-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:13:58.594-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:13:58.670-04:00  WARN 13856 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:13:58.688-04:00  INFO 13856 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:13:58.818-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T12:13:58.828-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 0.875 seconds (process running for 3806.798)
+2026-06-11T12:13:58.829-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:13:58.829-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:13:58.830-04:00  INFO 13856 --- [pago_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:14:25.719-04:00  INFO 13856 --- [pago_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T12:14:25.721-04:00  INFO 13856 --- [pago_ms] [Thread-25] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T12:14:25.731-04:00  INFO 13856 --- [pago_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T12:14:25.734-04:00  INFO 13856 --- [pago_ms] [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:14:25.735-04:00  INFO 13856 --- [pago_ms] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-06-11T12:14:25.739-04:00  INFO 13856 --- [pago_ms] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-06-11T12:14:25.841-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:14:25.842-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:14:25.842-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:14:26.025-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:14:26.038-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-06-11T12:14:26.083-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53114368-d087-3feb-8370-c5040d528b04
+2026-06-11T12:14:26.126-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:14:26.128-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:14:26.128-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:14:26.167-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 323 ms
+2026-06-11T12:14:26.196-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:14:26.223-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:14:26.225-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-06-11T12:14:26.230-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49ca42e3
+2026-06-11T12:14:26.231-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-06-11T12:14:26.233-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:14:26.234-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:14:26.235-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:14:26.269-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:14:26.357-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:14:26.446-04:00  WARN 13856 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:14:26.473-04:00  INFO 13856 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:14:26.614-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T12:14:26.624-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 0.812 seconds (process running for 3834.595)
+2026-06-11T12:14:26.626-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:14:26.627-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:14:26.629-04:00  INFO 13856 --- [pago_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:14:31.083-04:00  INFO 13856 --- [pago_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T12:14:31.085-04:00  INFO 13856 --- [pago_ms] [Thread-31] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T12:14:31.094-04:00  INFO 13856 --- [pago_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T12:14:31.096-04:00  INFO 13856 --- [pago_ms] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:14:31.097-04:00  INFO 13856 --- [pago_ms] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-06-11T12:14:31.099-04:00  INFO 13856 --- [pago_ms] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-06-11T12:14:31.216-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:14:31.216-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:14:31.217-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:14:31.418-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:14:31.428-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2026-06-11T12:14:31.475-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53114368-d087-3feb-8370-c5040d528b04
+2026-06-11T12:14:31.521-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:14:31.522-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:14:31.523-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:14:31.561-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 342 ms
+2026-06-11T12:14:31.582-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:14:31.606-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:14:31.607-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-06-11T12:14:31.611-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73d29eec
+2026-06-11T12:14:31.611-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-06-11T12:14:31.613-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:14:31.613-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:14:31.614-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:14:31.644-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:14:31.730-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:14:31.786-04:00  WARN 13856 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:14:31.800-04:00  INFO 13856 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:14:31.912-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T12:14:31.921-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 0.754 seconds (process running for 3839.891)
+2026-06-11T12:14:31.922-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:14:31.922-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:14:31.923-04:00  INFO 13856 --- [pago_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:16:25.789-04:00  INFO 13856 --- [pago_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T12:16:25.791-04:00  INFO 13856 --- [pago_ms] [Thread-37] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T12:16:25.801-04:00  INFO 13856 --- [pago_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T12:16:25.803-04:00  INFO 13856 --- [pago_ms] [Thread-37] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:16:25.805-04:00  INFO 13856 --- [pago_ms] [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-06-11T12:16:25.808-04:00  INFO 13856 --- [pago_ms] [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-06-11T12:16:25.912-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:16:25.912-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:16:25.913-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:16:26.066-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:16:26.075-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2026-06-11T12:16:26.108-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53114368-d087-3feb-8370-c5040d528b04
+2026-06-11T12:16:26.144-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:16:26.146-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:16:26.146-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:16:26.179-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 262 ms
+2026-06-11T12:16:26.204-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:16:26.233-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:16:26.234-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-06-11T12:16:26.242-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@536f65eb
+2026-06-11T12:16:26.242-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-06-11T12:16:26.245-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:16:26.245-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:16:26.246-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:16:26.282-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:16:26.358-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:16:26.403-04:00  WARN 13856 --- [pago_ms] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pagoController' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes\com\example\pago_ms\controller\PagoController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pagoServiceImpl' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes\com\example\pago_ms\service\PagoServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.pago_ms.client.PedidoClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T12:16:26.404-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:16:26.405-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-06-11T12:16:26.424-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-06-11T12:16:26.425-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T12:16:26.430-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-11T12:16:26.451-04:00 ERROR 13856 --- [pago_ms] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.pago_ms.service.PagoServiceImpl required a bean of type 'com.example.pago_ms.client.PedidoClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.pago_ms.client.PedidoClient' in your configuration.
+
+2026-06-11T12:17:32.242-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:17:32.242-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:17:32.242-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:17:32.394-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:17:32.403-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2026-06-11T12:17:32.432-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53114368-d087-3feb-8370-c5040d528b04
+2026-06-11T12:17:32.469-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:17:32.470-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:17:32.470-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:17:32.499-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 255 ms
+2026-06-11T12:17:32.521-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:17:32.543-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:17:32.544-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-06-11T12:17:32.548-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6838b000
+2026-06-11T12:17:32.548-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-06-11T12:17:32.550-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:17:32.550-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:17:32.551-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:17:32.580-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:17:32.665-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:17:32.699-04:00  WARN 13856 --- [pago_ms] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pagoController' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes\com\example\pago_ms\controller\PagoController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pagoServiceImpl' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes\com\example\pago_ms\service\PagoServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.pago_ms.client.PedidoClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T12:17:32.700-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:17:32.700-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-06-11T12:17:32.707-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-06-11T12:17:32.708-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T12:17:32.711-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-11T12:17:32.714-04:00 ERROR 13856 --- [pago_ms] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.pago_ms.service.PagoServiceImpl required a bean of type 'com.example.pago_ms.client.PedidoClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.pago_ms.client.PedidoClient' in your configuration.
+
+2026-06-11T12:17:37.242-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:17:37.242-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:17:37.243-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:17:37.391-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:17:37.401-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2026-06-11T12:17:37.435-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53114368-d087-3feb-8370-c5040d528b04
+2026-06-11T12:17:37.473-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:17:37.474-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:17:37.474-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:17:37.508-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 264 ms
+2026-06-11T12:17:37.529-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:17:37.555-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:17:37.556-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-06-11T12:17:37.560-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c59011b
+2026-06-11T12:17:37.560-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-06-11T12:17:37.562-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:17:37.562-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:17:37.563-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:17:37.590-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:17:37.674-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:17:37.724-04:00  WARN 13856 --- [pago_ms] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pagoController' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes\com\example\pago_ms\controller\PagoController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pagoServiceImpl' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes\com\example\pago_ms\service\PagoServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.pago_ms.client.PedidoClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T12:17:37.725-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:17:37.725-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-06-11T12:17:37.767-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2026-06-11T12:17:37.769-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T12:17:37.773-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-11T12:17:37.777-04:00 ERROR 13856 --- [pago_ms] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.pago_ms.service.PagoServiceImpl required a bean of type 'com.example.pago_ms.client.PedidoClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.pago_ms.client.PedidoClient' in your configuration.
+
+2026-06-11T12:21:59.790-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 13856 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:21:59.791-04:00 DEBUG 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:21:59.791-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:21:59.960-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:21:59.970-04:00  INFO 13856 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2026-06-11T12:22:00.012-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f2b35a0e-d718-3553-bdf9-4a83efcb6869
+2026-06-11T12:22:00.058-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:22:00.059-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:22:00.060-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:22:00.102-04:00  INFO 13856 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 306 ms
+2026-06-11T12:22:00.141-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:22:00.167-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:22:00.168-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-06-11T12:22:00.172-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@edac808
+2026-06-11T12:22:00.173-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-06-11T12:22:00.174-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:22:00.175-04:00  WARN 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:22:00.176-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:22:00.215-04:00  INFO 13856 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:22:00.301-04:00  INFO 13856 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:22:00.469-04:00  WARN 13856 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:22:00.555-04:00  INFO 13856 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:22:00.750-04:00  INFO 13856 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T12:22:00.760-04:00  INFO 13856 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 1.021 seconds (process running for 4288.731)
+2026-06-11T12:22:00.761-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:22:00.762-04:00  WARN 13856 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:22:00.763-04:00  INFO 13856 --- [pago_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:22:01.667-04:00  INFO 15600 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 15600 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:22:01.670-04:00 DEBUG 15600 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:22:01.671-04:00  INFO 15600 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:22:01.738-04:00  INFO 15600 --- [pago_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-11T12:22:01.739-04:00  INFO 15600 --- [pago_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-11T12:22:02.876-04:00  INFO 15600 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:22:02.943-04:00  INFO 15600 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2026-06-11T12:22:03.242-04:00  INFO 15600 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f2b35a0e-d718-3553-bdf9-4a83efcb6869
+2026-06-11T12:22:04.014-04:00  INFO 15600 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:22:04.034-04:00  INFO 15600 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:22:04.035-04:00  INFO 15600 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:22:04.128-04:00  INFO 15600 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2388 ms
+2026-06-11T12:22:04.430-04:00  INFO 15600 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:22:04.539-04:00  INFO 15600 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T12:22:05.200-04:00  INFO 15600 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:22:05.259-04:00  INFO 15600 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T12:22:05.493-04:00  INFO 15600 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3af5a6a0
+2026-06-11T12:22:05.495-04:00  INFO 15600 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T12:22:05.533-04:00  WARN 15600 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:22:05.537-04:00  WARN 15600 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:22:05.558-04:00  INFO 15600 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:22:06.303-04:00  INFO 15600 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:22:06.449-04:00  INFO 15600 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:22:06.540-04:00  INFO 15600 --- [pago_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T12:22:06.910-04:00  WARN 15600 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:22:07.134-04:00  INFO 15600 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:22:08.083-04:00  WARN 15600 --- [pago_ms] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-11T12:22:08.088-04:00  INFO 15600 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:22:08.093-04:00  INFO 15600 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-11T12:22:08.105-04:00  INFO 15600 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-11T12:22:08.120-04:00  INFO 15600 --- [pago_ms] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-11T12:22:08.148-04:00 ERROR 15600 --- [pago_ms] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2026-06-11T12:26:14.689-04:00  INFO 12264 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Starting PagoMsApplication using Java 21.0.10 with PID 12264 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pago_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:26:14.691-04:00 DEBUG 12264 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T12:26:14.693-04:00  INFO 12264 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:26:14.758-04:00  INFO 12264 --- [pago_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-11T12:26:14.759-04:00  INFO 12264 --- [pago_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-11T12:26:15.881-04:00  INFO 12264 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:26:15.956-04:00  INFO 12264 --- [pago_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2026-06-11T12:26:16.204-04:00  INFO 12264 --- [pago_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f2b35a0e-d718-3553-bdf9-4a83efcb6869
+2026-06-11T12:26:16.891-04:00  INFO 12264 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-06-11T12:26:16.906-04:00  INFO 12264 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:26:16.907-04:00  INFO 12264 --- [pago_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:26:16.999-04:00  INFO 12264 --- [pago_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2239 ms
+2026-06-11T12:26:17.286-04:00  INFO 12264 --- [pago_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:26:17.402-04:00  INFO 12264 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T12:26:17.930-04:00  INFO 12264 --- [pago_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:26:17.963-04:00  INFO 12264 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T12:26:18.119-04:00  INFO 12264 --- [pago_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3af5a6a0
+2026-06-11T12:26:18.122-04:00  INFO 12264 --- [pago_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T12:26:18.166-04:00  WARN 12264 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:26:18.169-04:00  WARN 12264 --- [pago_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:26:18.195-04:00  INFO 12264 --- [pago_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:26:18.881-04:00  INFO 12264 --- [pago_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:26:19.006-04:00  INFO 12264 --- [pago_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:26:19.112-04:00  INFO 12264 --- [pago_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T12:26:19.428-04:00  WARN 12264 --- [pago_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:26:19.616-04:00  INFO 12264 --- [pago_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:26:20.606-04:00  INFO 12264 --- [pago_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-06-11T12:26:20.624-04:00  INFO 12264 --- [pago_ms] [restartedMain] com.example.pago_ms.PagoMsApplication    : Started PagoMsApplication in 6.472 seconds (process running for 7.297)
+2026-06-11T12:26:20.630-04:00  WARN 12264 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:26:20.630-04:00  WARN 12264 --- [pago_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:26:30.709-04:00  INFO 12264 --- [pago_ms] [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T12:26:30.710-04:00  INFO 12264 --- [pago_ms] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T12:26:30.711-04:00  INFO 12264 --- [pago_ms] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-11T12:26:31.043-04:00  INFO 12264 --- [pago_ms] [http-nio-8088-exec-2] c.e.pago_ms.service.PagoServiceImpl      : Iniciando creación de pago para pedidoId=7
+2026-06-11T12:26:31.616-04:00  INFO 12264 --- [pago_ms] [http-nio-8088-exec-2] c.e.pago_ms.service.PagoServiceImpl      : Pago creado correctamente con id=7
+2026-06-11T12:27:14.422-04:00  INFO 12264 --- [pago_ms] [http-nio-8088-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 270 ms

@@ -43,3 +43,722 @@
 2026-06-10T20:22:52.202-04:00  INFO 10332 --- [pedidos_ms] [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2026-06-10T20:22:52.425-04:00  INFO 10332 --- [pedidos_ms] [http-nio-8087-exec-1] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=6
 2026-06-10T20:24:07.057-04:00  INFO 10332 --- [pedidos_ms] [http-nio-8087-exec-4] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=6
+2026-06-11T11:10:07.196-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:10:07.199-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:10:07.264-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-11T11:10:07.265-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-11T11:10:08.463-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:10:08.526-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:10:08.772-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c891d3b3-b803-3b48-95a4-b74a909c2462
+2026-06-11T11:10:09.543-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:10:09.562-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:10:09.563-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:10:09.651-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2385 ms
+2026-06-11T11:10:09.914-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:10:09.990-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T11:10:10.434-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:10:10.465-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T11:10:10.633-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7480aa1f
+2026-06-11T11:10:10.636-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T11:10:10.683-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:10:10.687-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:10:10.715-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:10:11.452-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:10:11.796-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:10:11.895-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T11:10:12.197-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:10:12.296-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:10:13.117-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:10:13.137-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 6.47 seconds (process running for 7.315)
+2026-06-11T11:10:13.142-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:10:13.144-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:17:37.351-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T11:17:37.352-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T11:17:37.354-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-11T11:17:37.556-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-1] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=6
+2026-06-11T11:51:57.104-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T11:51:57.109-04:00  INFO 8 --- [pedidos_ms] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:51:57.119-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:51:57.124-04:00  INFO 8 --- [pedidos_ms] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:51:57.128-04:00  INFO 8 --- [pedidos_ms] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-11T11:51:57.131-04:00  INFO 8 --- [pedidos_ms] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-11T11:51:57.257-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:51:57.258-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:51:57.532-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:51:57.548-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:51:57.608-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c891d3b3-b803-3b48-95a4-b74a909c2462
+2026-06-11T11:51:57.673-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:51:57.675-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:51:57.676-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:51:57.728-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 467 ms
+2026-06-11T11:51:57.772-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:51:57.804-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:51:57.806-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-11T11:51:57.812-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9338f16
+2026-06-11T11:51:57.813-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-11T11:51:57.818-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:51:57.819-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:51:57.820-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:51:57.872-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:51:58.163-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:51:58.265-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:51:58.295-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:51:58.436-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:51:58.448-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 1.231 seconds (process running for 2512.626)
+2026-06-11T11:51:58.449-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:51:58.450-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:51:58.452-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:52:17.291-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T11:52:17.293-04:00  INFO 8 --- [pedidos_ms] [Thread-7] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:52:17.302-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:52:17.306-04:00  INFO 8 --- [pedidos_ms] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:52:17.307-04:00  INFO 8 --- [pedidos_ms] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-06-11T11:52:17.309-04:00  INFO 8 --- [pedidos_ms] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-06-11T11:52:17.422-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:52:17.423-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:52:17.586-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:52:17.604-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:52:17.650-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c891d3b3-b803-3b48-95a4-b74a909c2462
+2026-06-11T11:52:17.709-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:52:17.711-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:52:17.711-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:52:17.758-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 334 ms
+2026-06-11T11:52:17.786-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:52:17.813-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:52:17.815-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-11T11:52:17.820-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de9fe60
+2026-06-11T11:52:17.820-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-11T11:52:17.822-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:52:17.823-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:52:17.823-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:52:17.884-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:52:18.119-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:52:18.185-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:52:18.203-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:52:18.326-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:52:18.334-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 0.95 seconds (process running for 2532.512)
+2026-06-11T11:52:18.335-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:52:18.335-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:52:18.336-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:52:45.463-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T11:52:45.467-04:00  INFO 8 --- [pedidos_ms] [Thread-13] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:52:45.475-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:52:45.479-04:00  INFO 8 --- [pedidos_ms] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:52:45.481-04:00  INFO 8 --- [pedidos_ms] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-06-11T11:52:45.483-04:00  INFO 8 --- [pedidos_ms] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-06-11T11:52:45.592-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:52:45.593-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:52:45.811-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:52:45.828-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:52:45.884-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:52:45.955-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:52:45.956-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:52:45.956-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:52:45.999-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 405 ms
+2026-06-11T11:52:46.028-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:52:46.058-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:52:46.059-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-11T11:52:46.065-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@565eeaf8
+2026-06-11T11:52:46.066-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-11T11:52:46.067-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:52:46.068-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:52:46.069-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:52:46.138-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:52:46.387-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:52:46.450-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:52:46.470-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:52:46.574-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:52:46.581-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 1.027 seconds (process running for 2560.759)
+2026-06-11T11:52:46.582-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:52:46.583-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:52:46.585-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:53:04.475-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T11:53:04.478-04:00  INFO 8 --- [pedidos_ms] [Thread-19] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:53:04.488-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:53:04.492-04:00  INFO 8 --- [pedidos_ms] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:53:04.493-04:00  INFO 8 --- [pedidos_ms] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-06-11T11:53:04.497-04:00  INFO 8 --- [pedidos_ms] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-06-11T11:53:04.616-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:53:04.616-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:53:04.823-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:53:04.838-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:53:04.880-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:53:04.936-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:53:04.937-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:53:04.938-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:53:04.985-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 366 ms
+2026-06-11T11:53:05.009-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:53:05.043-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:53:05.045-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-06-11T11:53:05.049-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3aefb163
+2026-06-11T11:53:05.050-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-06-11T11:53:05.051-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:53:05.052-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:53:05.053-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:53:05.111-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:53:05.340-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:53:05.406-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:53:05.423-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:53:05.528-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:53:05.535-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 0.959 seconds (process running for 2579.713)
+2026-06-11T11:53:05.536-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:53:05.537-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:53:05.537-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:55:59.528-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T11:55:59.530-04:00  INFO 8 --- [pedidos_ms] [Thread-25] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:55:59.540-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:55:59.543-04:00  INFO 8 --- [pedidos_ms] [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:55:59.545-04:00  INFO 8 --- [pedidos_ms] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-06-11T11:55:59.548-04:00  INFO 8 --- [pedidos_ms] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-06-11T11:55:59.672-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:55:59.673-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:55:59.887-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:55:59.903-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:55:59.951-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:56:00.008-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:56:00.009-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:56:00.009-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:56:00.057-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 382 ms
+2026-06-11T11:56:00.085-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:56:00.121-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:56:00.123-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-06-11T11:56:00.132-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73a3361d
+2026-06-11T11:56:00.133-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-06-11T11:56:00.136-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:56:00.137-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:56:00.140-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:56:00.221-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:56:00.477-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:56:00.535-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:56:00.555-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:56:00.654-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:56:00.663-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 1.031 seconds (process running for 2754.842)
+2026-06-11T11:56:00.664-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:56:00.665-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:56:00.666-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:56:05.178-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T11:56:05.180-04:00  INFO 8 --- [pedidos_ms] [Thread-31] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:56:05.188-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:56:05.189-04:00  INFO 8 --- [pedidos_ms] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:56:05.190-04:00  INFO 8 --- [pedidos_ms] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-06-11T11:56:05.195-04:00  INFO 8 --- [pedidos_ms] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-06-11T11:56:05.290-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:56:05.291-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:56:05.449-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:56:05.465-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:56:05.504-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:56:05.553-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:56:05.554-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:56:05.554-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:56:05.597-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 305 ms
+2026-06-11T11:56:05.619-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:56:05.646-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:56:05.647-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-06-11T11:56:05.651-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c60786c
+2026-06-11T11:56:05.651-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-06-11T11:56:05.653-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:56:05.653-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:56:05.654-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:56:05.705-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:56:05.933-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:56:05.993-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:56:06.008-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:56:06.105-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:56:06.113-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 0.855 seconds (process running for 2760.291)
+2026-06-11T11:56:06.114-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:56:06.114-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:56:06.115-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:56:25.030-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T11:56:25.032-04:00  INFO 8 --- [pedidos_ms] [Thread-37] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:56:25.043-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:56:25.046-04:00  INFO 8 --- [pedidos_ms] [Thread-37] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:56:25.047-04:00  INFO 8 --- [pedidos_ms] [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-06-11T11:56:25.050-04:00  INFO 8 --- [pedidos_ms] [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-06-11T11:56:25.159-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:56:25.160-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:56:25.347-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:56:25.367-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:56:25.416-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:56:25.479-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:56:25.480-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:56:25.480-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:56:25.533-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 371 ms
+2026-06-11T11:56:25.559-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:56:25.589-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:56:25.591-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-06-11T11:56:25.597-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bc7e5ae
+2026-06-11T11:56:25.597-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-06-11T11:56:25.599-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:56:25.600-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:56:25.600-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:56:25.673-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:56:25.952-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:56:26.021-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:56:26.039-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:56:26.149-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:56:26.161-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 1.037 seconds (process running for 2780.339)
+2026-06-11T11:56:26.162-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:56:26.163-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:56:26.164-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:56:50.153-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T11:56:50.155-04:00  INFO 8 --- [pedidos_ms] [Thread-43] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:56:50.162-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:56:50.164-04:00  INFO 8 --- [pedidos_ms] [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:56:50.165-04:00  INFO 8 --- [pedidos_ms] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-06-11T11:56:50.168-04:00  INFO 8 --- [pedidos_ms] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-06-11T11:56:50.282-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:56:50.282-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:56:50.426-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:56:50.442-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:56:50.481-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:56:50.522-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:56:50.523-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:56:50.524-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:56:50.568-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 284 ms
+2026-06-11T11:56:50.590-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:56:50.616-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:56:50.618-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-06-11T11:56:50.623-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bcbedad
+2026-06-11T11:56:50.623-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-06-11T11:56:50.625-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:56:50.626-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:56:50.626-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:56:50.686-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:56:50.929-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:56:50.982-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:56:50.997-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:56:51.106-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:56:51.115-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 0.867 seconds (process running for 2805.294)
+2026-06-11T11:56:51.117-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:56:51.117-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:56:51.118-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:57:07.923-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T11:57:07.925-04:00  INFO 8 --- [pedidos_ms] [Thread-49] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:57:07.934-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:57:07.936-04:00  INFO 8 --- [pedidos_ms] [Thread-49] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:57:07.936-04:00  INFO 8 --- [pedidos_ms] [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-06-11T11:57:07.938-04:00  INFO 8 --- [pedidos_ms] [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-06-11T11:57:08.040-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:57:08.041-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:57:08.202-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:57:08.216-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:57:08.248-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:57:08.295-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:57:08.296-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:57:08.297-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:57:08.342-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 299 ms
+2026-06-11T11:57:08.363-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:57:08.388-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:57:08.390-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-06-11T11:57:08.393-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27896db3
+2026-06-11T11:57:08.394-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-06-11T11:57:08.396-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:57:08.396-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:57:08.397-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:57:08.451-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:57:08.693-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:57:08.771-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:57:08.793-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:57:08.928-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:57:08.937-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 0.931 seconds (process running for 2823.115)
+2026-06-11T11:57:08.939-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:57:08.939-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:57:08.940-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:57:14.468-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T11:57:14.469-04:00  INFO 8 --- [pedidos_ms] [Thread-55] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:57:14.477-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:57:14.480-04:00  INFO 8 --- [pedidos_ms] [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:57:14.481-04:00  INFO 8 --- [pedidos_ms] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-06-11T11:57:14.483-04:00  INFO 8 --- [pedidos_ms] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2026-06-11T11:57:14.581-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:57:14.582-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:57:14.722-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:57:14.736-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:57:14.774-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:57:14.825-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:57:14.827-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:57:14.827-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:57:14.870-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 286 ms
+2026-06-11T11:57:14.893-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:57:14.918-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:57:14.919-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-06-11T11:57:14.923-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28608a63
+2026-06-11T11:57:14.923-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-06-11T11:57:14.924-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:57:14.925-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:57:14.926-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:57:14.983-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:57:15.212-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:57:15.267-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:57:15.280-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:57:15.372-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:57:15.379-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 0.827 seconds (process running for 2829.556)
+2026-06-11T11:57:15.380-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:57:15.380-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:57:15.380-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:57:24.004-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-06-11T11:57:24.005-04:00  INFO 8 --- [pedidos_ms] [Thread-61] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:57:24.012-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:57:24.020-04:00  INFO 8 --- [pedidos_ms] [Thread-61] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:57:24.026-04:00  INFO 8 --- [pedidos_ms] [Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-06-11T11:57:24.029-04:00  INFO 8 --- [pedidos_ms] [Thread-61] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2026-06-11T11:57:24.149-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:57:24.150-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:57:24.328-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:57:24.342-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:57:24.373-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:57:24.411-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:57:24.412-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:57:24.412-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:57:24.456-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 304 ms
+2026-06-11T11:57:24.477-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:57:24.503-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:57:24.504-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-06-11T11:57:24.508-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5050661e
+2026-06-11T11:57:24.508-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-06-11T11:57:24.510-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:57:24.511-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:57:24.512-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:57:24.567-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:57:24.889-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:57:24.952-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:57:24.970-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:57:25.081-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:57:25.088-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 0.974 seconds (process running for 2839.267)
+2026-06-11T11:57:25.089-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:57:25.090-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:57:25.090-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T11:58:54.630-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T11:58:54.632-04:00  INFO 8 --- [pedidos_ms] [Thread-67] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:58:54.642-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:58:54.644-04:00  INFO 8 --- [pedidos_ms] [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:58:54.645-04:00  INFO 8 --- [pedidos_ms] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-06-11T11:58:54.647-04:00  INFO 8 --- [pedidos_ms] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2026-06-11T11:58:54.771-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:58:54.772-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:58:54.926-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:58:54.938-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2026-06-11T11:58:54.979-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T11:58:55.017-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T11:58:55.018-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:58:55.019-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:58:55.051-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 277 ms
+2026-06-11T11:58:55.068-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:58:55.089-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:58:55.090-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-06-11T11:58:55.094-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17b7e3a6
+2026-06-11T11:58:55.095-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-06-11T11:58:55.096-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:58:55.096-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:58:55.097-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:58:55.153-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:58:55.368-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:58:55.420-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:58:55.432-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:58:55.526-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T11:58:55.536-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 0.793 seconds (process running for 2929.714)
+2026-06-11T11:58:55.537-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:58:55.538-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:58:55.539-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:02:55.850-04:00  INFO 8 --- [pedidos_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-11T12:02:55.852-04:00  INFO 8 --- [pedidos_ms] [Thread-73] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T12:02:55.866-04:00  INFO 8 --- [pedidos_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T12:02:55.868-04:00  INFO 8 --- [pedidos_ms] [Thread-73] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:02:55.869-04:00  INFO 8 --- [pedidos_ms] [Thread-73] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-06-11T12:02:55.871-04:00  INFO 8 --- [pedidos_ms] [Thread-73] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2026-06-11T12:02:56.008-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:02:56.009-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:02:56.168-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:02:56.176-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2026-06-11T12:02:56.210-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T12:02:56.250-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T12:02:56.251-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:02:56.251-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:02:56.282-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 272 ms
+2026-06-11T12:02:56.303-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:02:56.330-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:02:56.331-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-06-11T12:02:56.337-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@145b04d7
+2026-06-11T12:02:56.338-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-06-11T12:02:56.339-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:02:56.340-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:02:56.341-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:02:56.397-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:02:56.618-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:02:56.653-04:00  WARN 8 --- [pedidos_ms] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pedidoController' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes\com\example\pedido_ms\controller\PedidoController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pedidoServiceImpl' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes\com\example\pedido_ms\service\PedidoServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.pedido_ms.client.ClienteClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T12:02:56.654-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:02:56.654-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2026-06-11T12:02:56.680-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2026-06-11T12:02:56.681-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T12:02:56.684-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-11T12:02:56.699-04:00 ERROR 8 --- [pedidos_ms] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.pedido_ms.service.PedidoServiceImpl required a bean of type 'com.example.pedido_ms.client.ClienteClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.pedido_ms.client.ClienteClient' in your configuration.
+
+2026-06-11T12:03:37.156-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:03:37.156-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:03:37.290-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:03:37.298-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2026-06-11T12:03:37.329-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a46e1bb4-6e13-363b-9941-bbd77f822ff2
+2026-06-11T12:03:37.367-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T12:03:37.368-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:03:37.368-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:03:37.398-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 240 ms
+2026-06-11T12:03:37.415-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:03:37.441-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:03:37.442-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2026-06-11T12:03:37.448-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b6aca4e
+2026-06-11T12:03:37.448-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2026-06-11T12:03:37.450-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:03:37.450-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:03:37.451-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:03:37.485-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:03:37.693-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:03:37.725-04:00  WARN 8 --- [pedidos_ms] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pedidoController' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes\com\example\pedido_ms\controller\PedidoController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'pedidoServiceImpl' defined in file [C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes\com\example\pedido_ms\service\PedidoServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.pedido_ms.client.ClienteClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T12:03:37.726-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:03:37.726-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2026-06-11T12:03:37.728-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2026-06-11T12:03:37.729-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T12:03:37.731-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-11T12:03:37.735-04:00 ERROR 8 --- [pedidos_ms] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.pedido_ms.service.PedidoServiceImpl required a bean of type 'com.example.pedido_ms.client.ClienteClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.pedido_ms.client.ClienteClient' in your configuration.
+
+2026-06-11T12:04:25.327-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 8 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T12:04:25.327-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T12:04:25.500-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T12:04:25.510-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2026-06-11T12:04:25.540-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47607bc6-2428-3754-8966-7582649bd518
+2026-06-11T12:04:25.581-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-11T12:04:25.582-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T12:04:25.582-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T12:04:25.618-04:00  INFO 8 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 287 ms
+2026-06-11T12:04:25.638-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T12:04:25.660-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T12:04:25.661-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2026-06-11T12:04:25.665-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@657388b7
+2026-06-11T12:04:25.666-04:00  INFO 8 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2026-06-11T12:04:25.667-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T12:04:25.668-04:00  WARN 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T12:04:25.669-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T12:04:25.704-04:00  INFO 8 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T12:04:25.929-04:00  INFO 8 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T12:04:26.092-04:00  WARN 8 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T12:04:26.202-04:00  INFO 8 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T12:04:26.360-04:00  INFO 8 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-11T12:04:26.370-04:00  INFO 8 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 1.075 seconds (process running for 3260.548)
+2026-06-11T12:04:26.371-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T12:04:26.372-04:00  WARN 8 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T12:04:26.372-04:00  INFO 8 --- [pedidos_ms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-11T12:06:02.953-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T12:06:02.953-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T12:06:02.954-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-11T12:06:03.168-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-2] c.e.pedido_ms.service.PedidoServiceImpl  : Iniciando creación de pedido para clienteId=5
+2026-06-11T12:06:03.423-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-2] c.e.pedido_ms.service.PedidoServiceImpl  : Pedido creado correctamente con id=7
+2026-06-11T12:07:16.702-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 225 ms
+2026-06-11T12:18:58.477-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-8] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=6
+2026-06-11T12:26:31.120-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-1] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=7
+2026-06-11T12:36:24.184-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-4] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=6
+2026-06-11T12:37:26.479-04:00  INFO 8 --- [pedidos_ms] [http-nio-8087-exec-7] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=6

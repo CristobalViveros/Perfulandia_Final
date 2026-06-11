@@ -1,0 +1,46 @@
+2026-06-11T11:37:23.542-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] c.e.p.ProveedoresMsApplication           : Starting ProveedoresMsApplication using Java 21.0.10 with PID 22784 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\proveedores_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
+2026-06-11T11:37:23.545-04:00 DEBUG 22784 --- [proveedores_ms] [restartedMain] c.e.p.ProveedoresMsApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-11T11:37:23.546-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] c.e.p.ProveedoresMsApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:37:23.594-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-11T11:37:23.595-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-11T11:37:24.757-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:37:24.825-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2026-06-11T11:37:25.088-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=35456c3d-6842-3f48-a1d3-47c8cd06fa2f
+2026-06-11T11:37:25.852-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8086 (http)
+2026-06-11T11:37:25.873-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:37:25.874-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:37:25.970-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2373 ms
+2026-06-11T11:37:26.243-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:37:26.371-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T11:37:26.786-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:37:26.811-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T11:37:26.967-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42828cf7
+2026-06-11T11:37:26.969-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T11:37:27.012-04:00  WARN 22784 --- [proveedores_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-11T11:37:27.017-04:00  WARN 22784 --- [proveedores_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T11:37:27.039-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:37:27.702-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:37:27.820-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:37:27.907-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T11:37:28.186-04:00  WARN 22784 --- [proveedores_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:37:28.273-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:37:29.097-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8086 (http) with context path '/'
+2026-06-11T11:37:29.112-04:00  INFO 22784 --- [proveedores_ms] [restartedMain] c.e.p.ProveedoresMsApplication           : Started ProveedoresMsApplication in 6.11 seconds (process running for 6.937)
+2026-06-11T11:37:29.116-04:00  WARN 22784 --- [proveedores_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-11T11:37:29.117-04:00  WARN 22784 --- [proveedores_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-11T11:39:43.595-04:00  INFO 22784 --- [proveedores_ms] [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T11:39:43.595-04:00  INFO 22784 --- [proveedores_ms] [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T11:39:43.597-04:00  INFO 22784 --- [proveedores_ms] [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-11T11:39:43.788-04:00  INFO 22784 --- [proveedores_ms] [http-nio-8086-exec-1] c.e.p.service.ProveedorServiceImpl       : Buscando proveedor por id=1
+2026-06-11T11:40:10.661-04:00  INFO 22784 --- [proveedores_ms] [http-nio-8086-exec-3] c.e.p.service.ProveedorServiceImpl       : Buscando proveedor por id=1
