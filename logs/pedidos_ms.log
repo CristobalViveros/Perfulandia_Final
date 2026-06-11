@@ -1,0 +1,45 @@
+2026-06-10T20:08:00.168-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Starting PedidoMsApplication using Java 21.0.10 with PID 10332 (C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final\pedido_ms\target\classes started by Moonlabpc in C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final)
+2026-06-10T20:08:00.169-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-10T20:08:00.224-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-10T20:08:00.224-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-10T20:08:01.308-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-10T20:08:01.389-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2026-06-10T20:08:01.706-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c891d3b3-b803-3b48-95a4-b74a909c2462
+2026-06-10T20:08:02.201-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-10T20:08:02.219-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-10T20:08:02.219-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-10T20:08:02.282-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2058 ms
+2026-06-10T20:08:02.476-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-10T20:08:02.538-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-10T20:08:03.071-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-10T20:08:03.110-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-10T20:08:03.304-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f0c3c9
+2026-06-10T20:08:03.304-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-10T20:08:03.354-04:00  WARN 10332 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-10T20:08:03.359-04:00  WARN 10332 --- [pedidos_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-10T20:08:03.379-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-10T20:08:04.281-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-10T20:08:04.570-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-10T20:08:04.661-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-10T20:08:04.979-04:00  WARN 10332 --- [pedidos_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-10T20:08:05.076-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-10T20:08:05.764-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8087 (http) with context path '/'
+2026-06-10T20:08:05.777-04:00  INFO 10332 --- [pedidos_ms] [restartedMain] c.example.pedido_ms.PedidoMsApplication  : Started PedidoMsApplication in 6.15 seconds (process running for 6.888)
+2026-06-10T20:08:05.782-04:00  WARN 10332 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-10T20:08:05.782-04:00  WARN 10332 --- [pedidos_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-10T20:22:52.202-04:00  INFO 10332 --- [pedidos_ms] [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-10T20:22:52.202-04:00  INFO 10332 --- [pedidos_ms] [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-10T20:22:52.202-04:00  INFO 10332 --- [pedidos_ms] [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-10T20:22:52.425-04:00  INFO 10332 --- [pedidos_ms] [http-nio-8087-exec-1] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=6
+2026-06-10T20:24:07.057-04:00  INFO 10332 --- [pedidos_ms] [http-nio-8087-exec-4] c.e.pedido_ms.service.PedidoServiceImpl  : Buscando pedido por id=6
