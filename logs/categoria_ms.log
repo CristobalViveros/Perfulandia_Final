@@ -1,24 +1,36 @@
-2026-06-11T11:36:46.696-04:00  INFO 23076 --- [categoria_ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Starting CategoriaMsApplication using Java 21.0.10 with PID 23076 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\categoria_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
-2026-06-11T11:36:46.699-04:00 DEBUG 23076 --- [categoria_ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-06-11T11:36:46.700-04:00  INFO 23076 --- [categoria_ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-06-11T11:36:46.748-04:00  INFO 23076 --- [categoria_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-11T11:36:46.749-04:00  INFO 23076 --- [categoria_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-11T11:36:47.910-04:00  INFO 23076 --- [categoria_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-11T11:36:47.983-04:00  INFO 23076 --- [categoria_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
-2026-06-11T11:36:48.225-04:00  INFO 23076 --- [categoria_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38588313-e3e4-3c88-b449-b2137d9170b6
-2026-06-11T11:36:48.917-04:00  INFO 23076 --- [categoria_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
-2026-06-11T11:36:48.935-04:00  INFO 23076 --- [categoria_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-11T11:36:48.936-04:00  INFO 23076 --- [categoria_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-11T11:36:49.013-04:00  INFO 23076 --- [categoria_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2263 ms
-2026-06-11T11:36:49.292-04:00  INFO 23076 --- [categoria_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-11T11:36:49.383-04:00  INFO 23076 --- [categoria_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-11T11:36:50.004-04:00  INFO 23076 --- [categoria_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-11T11:36:50.038-04:00  INFO 23076 --- [categoria_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-11T11:36:50.192-04:00  INFO 23076 --- [categoria_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24f7da5b
-2026-06-11T11:36:50.195-04:00  INFO 23076 --- [categoria_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-11T11:36:50.245-04:00  WARN 23076 --- [categoria_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-11T11:36:50.251-04:00  WARN 23076 --- [categoria_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-11T11:36:50.276-04:00  INFO 23076 --- [categoria_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-16T00:03:23.672-04:00  INFO 13612 --- [categoria_ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:07:41.584-04:00  INFO 13612 --- [categoria_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-16T00:07:41.585-04:00  INFO 13612 --- [categoria_ms] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CATEGORIA_MS with eureka with status DOWN
+2026-06-16T00:07:41.585-04:00  INFO 13612 --- [categoria_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781582861585, current=DOWN, previous=UP]
+2026-06-16T00:07:41.585-04:00  INFO 13612 --- [categoria_ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORIA_MS/Pc-Toobal:categoria_ms:8084: registering service...
+2026-06-16T00:07:41.592-04:00  INFO 13612 --- [categoria_ms] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-16T00:07:41.595-04:00  INFO 13612 --- [categoria_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-16T00:07:41.596-04:00  INFO 13612 --- [categoria_ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORIA_MS/Pc-Toobal:categoria_ms:8084 - registration status: 204
+2026-06-16T00:07:41.600-04:00  INFO 13612 --- [categoria_ms] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:07:41.606-04:00  INFO 13612 --- [categoria_ms] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-16T00:07:41.609-04:00  INFO 13612 --- [categoria_ms] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-16T00:07:41.609-04:00  INFO 13612 --- [categoria_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-16T00:07:44.617-04:00  INFO 13612 --- [categoria_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-16T00:07:44.621-04:00  INFO 13612 --- [categoria_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORIA_MS/Pc-Toobal:categoria_ms:8084 - deregister  status: 200
+2026-06-16T00:07:44.623-04:00  INFO 13612 --- [categoria_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-16T00:07:44.712-04:00  INFO 13612 --- [categoria-ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Starting CategoriaMsApplication using Java 21.0.10 with PID 13612 (C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final\categoria_ms\target\classes started by Moonlabpc in C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final)
+2026-06-16T00:07:44.712-04:00 DEBUG 13612 --- [categoria-ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-16T00:07:44.712-04:00  INFO 13612 --- [categoria-ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-16T00:07:44.970-04:00  INFO 13612 --- [categoria-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-16T00:07:44.980-04:00  INFO 13612 --- [categoria-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2026-06-16T00:07:45.092-04:00  INFO 13612 --- [categoria-ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=759257ba-edf5-3a0b-abb5-1f97b4dbbf09
+2026-06-16T00:07:45.151-04:00  INFO 13612 --- [categoria-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
+2026-06-16T00:07:45.151-04:00  INFO 13612 --- [categoria-ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-16T00:07:45.152-04:00  INFO 13612 --- [categoria-ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-16T00:07:45.188-04:00  INFO 13612 --- [categoria-ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 474 ms
+2026-06-16T00:07:45.216-04:00  INFO 13612 --- [categoria-ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-16T00:07:45.246-04:00  INFO 13612 --- [categoria-ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-16T00:07:45.247-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-16T00:07:45.247-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@773fceed
+2026-06-16T00:07:45.247-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-16T00:07:45.253-04:00  WARN 13612 --- [categoria-ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-16T00:07:45.253-04:00  WARN 13612 --- [categoria-ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-16T00:07:45.254-04:00  INFO 13612 --- [categoria-ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -30,17 +42,112 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-11T11:36:51.046-04:00  INFO 23076 --- [categoria_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-11T11:36:51.182-04:00  INFO 23076 --- [categoria_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T11:36:51.265-04:00  INFO 23076 --- [categoria_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-11T11:36:51.558-04:00  WARN 23076 --- [categoria_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-11T11:36:51.647-04:00  INFO 23076 --- [categoria_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-06-11T11:36:52.519-04:00  INFO 23076 --- [categoria_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
-2026-06-11T11:36:52.537-04:00  INFO 23076 --- [categoria_ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Started CategoriaMsApplication in 6.384 seconds (process running for 7.195)
-2026-06-11T11:36:52.541-04:00  WARN 23076 --- [categoria_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-06-11T11:36:52.542-04:00  WARN 23076 --- [categoria_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-06-11T11:39:27.592-04:00  INFO 23076 --- [categoria_ms] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-11T11:39:27.593-04:00  INFO 23076 --- [categoria_ms] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-11T11:39:27.594-04:00  INFO 23076 --- [categoria_ms] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-11T11:39:27.785-04:00  INFO 23076 --- [categoria_ms] [http-nio-8084-exec-1] c.e.c.service.CategoriaServiceImpl       : Buscando categoría por id=1
-2026-06-11T11:40:10.587-04:00  INFO 23076 --- [categoria_ms] [http-nio-8084-exec-3] c.e.c.service.CategoriaServiceImpl       : Buscando categoría por id=2
+2026-06-16T00:07:45.275-04:00  INFO 13612 --- [categoria-ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-16T00:07:45.343-04:00  INFO 13612 --- [categoria-ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:07:45.411-04:00  WARN 13612 --- [categoria-ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-16T00:07:45.442-04:00  INFO 13612 --- [categoria-ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-16T00:07:45.577-04:00  INFO 13612 --- [categoria-ms] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-16T00:07:45.589-04:00  WARN 13612 --- [categoria-ms] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-16T00:07:45.601-04:00  INFO 13612 --- [categoria-ms] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-16T00:07:45.603-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-16T00:07:45.603-04:00  INFO 13612 --- [categoria-ms] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:07:45.603-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-16T00:07:45.604-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-16T00:07:45.604-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-16T00:07:45.604-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-16T00:07:45.604-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-16T00:07:45.604-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-16T00:07:45.604-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-16T00:07:45.616-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-16T00:07:45.617-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-16T00:07:45.617-04:00  INFO 13612 --- [categoria-ms] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-16T00:07:45.617-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781582865617 with initial instances count: 9
+2026-06-16T00:07:45.618-04:00  INFO 13612 --- [categoria-ms] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CATEGORIA-MS with eureka with status UP
+2026-06-16T00:07:45.618-04:00  INFO 13612 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781582865618, current=UP, previous=STARTING]
+2026-06-16T00:07:45.619-04:00  INFO 13612 --- [categoria-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORIA-MS/Pc-Toobal:categoria-ms:8084: registering service...
+2026-06-16T00:07:45.621-04:00  INFO 13612 --- [categoria-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
+2026-06-16T00:07:45.622-04:00  INFO 13612 --- [categoria-ms] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2026-06-16T00:07:45.627-04:00  INFO 13612 --- [categoria-ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Started CategoriaMsApplication in 0.955 seconds (process running for 2669.135)
+2026-06-16T00:07:45.628-04:00  WARN 13612 --- [categoria-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-16T00:07:45.628-04:00  WARN 13612 --- [categoria-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-16T00:07:45.629-04:00  INFO 13612 --- [categoria-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORIA-MS/Pc-Toobal:categoria-ms:8084 - registration status: 204
+2026-06-16T00:12:45.609-04:00  INFO 13612 --- [categoria-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:15:58.913-04:00  INFO 2136 --- [categoria-ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Starting CategoriaMsApplication using Java 21.0.10 with PID 2136 (C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final\categoria_ms\target\classes started by Moonlabpc in C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final)
+2026-06-16T00:15:58.922-04:00 DEBUG 2136 --- [categoria-ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-16T00:15:58.923-04:00  INFO 2136 --- [categoria-ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-16T00:15:58.984-04:00  INFO 2136 --- [categoria-ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-16T00:15:58.984-04:00  INFO 2136 --- [categoria-ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-16T00:16:00.095-04:00  INFO 2136 --- [categoria-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-16T00:16:00.234-04:00  INFO 2136 --- [categoria-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 1 JPA repository interface.
+2026-06-16T00:16:00.545-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=759257ba-edf5-3a0b-abb5-1f97b4dbbf09
+2026-06-16T00:16:01.044-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
+2026-06-16T00:16:01.058-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-16T00:16:01.059-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-16T00:16:01.136-04:00  INFO 2136 --- [categoria-ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2152 ms
+2026-06-16T00:16:01.328-04:00  INFO 2136 --- [categoria-ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-16T00:16:01.384-04:00  INFO 2136 --- [categoria-ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-16T00:16:01.848-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-16T00:16:01.886-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-16T00:16:02.045-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3acfa06b
+2026-06-16T00:16:02.047-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-16T00:16:02.086-04:00  WARN 2136 --- [categoria-ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-16T00:16:02.089-04:00  WARN 2136 --- [categoria-ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-16T00:16:02.107-04:00  INFO 2136 --- [categoria-ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-16T00:16:02.833-04:00  INFO 2136 --- [categoria-ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-16T00:16:02.917-04:00  INFO 2136 --- [categoria-ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:16:02.999-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-16T00:16:03.281-04:00  WARN 2136 --- [categoria-ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-16T00:16:03.402-04:00  INFO 2136 --- [categoria-ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-16T00:16:04.044-04:00  INFO 2136 --- [categoria-ms] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-16T00:16:04.089-04:00  WARN 2136 --- [categoria-ms] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-16T00:16:04.134-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-16T00:16:04.158-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-16T00:16:04.161-04:00  INFO 2136 --- [categoria-ms] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:16:04.170-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-16T00:16:04.170-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-16T00:16:04.170-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-16T00:16:04.171-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-16T00:16:04.171-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-16T00:16:04.171-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-16T00:16:04.171-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-16T00:16:04.515-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-16T00:16:04.517-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-16T00:16:04.519-04:00  INFO 2136 --- [categoria-ms] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-16T00:16:04.521-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781583364520 with initial instances count: 9
+2026-06-16T00:16:04.525-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CATEGORIA-MS with eureka with status UP
+2026-06-16T00:16:04.525-04:00  INFO 2136 --- [categoria-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781583364525, current=UP, previous=STARTING]
+2026-06-16T00:16:04.528-04:00  INFO 2136 --- [categoria-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORIA-MS/Pc-Toobal:categoria-ms:8084: registering service...
+2026-06-16T00:16:04.557-04:00  INFO 2136 --- [categoria-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
+2026-06-16T00:16:04.560-04:00  INFO 2136 --- [categoria-ms] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2026-06-16T00:16:04.586-04:00  INFO 2136 --- [categoria-ms] [restartedMain] c.e.categoria_ms.CategoriaMsApplication  : Started CategoriaMsApplication in 6.154 seconds (process running for 6.845)
+2026-06-16T00:16:04.592-04:00  WARN 2136 --- [categoria-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-16T00:16:04.593-04:00  WARN 2136 --- [categoria-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-16T00:16:04.606-04:00  INFO 2136 --- [categoria-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORIA-MS/Pc-Toobal:categoria-ms:8084 - registration status: 204
+2026-06-16T00:18:36.898-04:00  INFO 2136 --- [categoria-ms] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-16T00:18:36.898-04:00  INFO 2136 --- [categoria-ms] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-16T00:18:36.898-04:00  INFO 2136 --- [categoria-ms] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-16T00:18:37.106-04:00  INFO 2136 --- [categoria-ms] [http-nio-8084-exec-1] c.e.c.service.CategoriaServiceImpl       : Buscando categoría por id=1
+2026-06-16T00:18:37.164-04:00  WARN 2136 --- [categoria-ms] [http-nio-8084-exec-1] c.e.c.service.CategoriaServiceImpl       : Categoría no encontrada con id=1
+2026-06-16T00:18:37.169-04:00  WARN 2136 --- [categoria-ms] [http-nio-8084-exec-1] c.e.c.exception.GlobalExceptionHandler   : ResourceNotFoundException: Categoría no encontrada con id: 1
+2026-06-16T00:18:37.197-04:00  WARN 2136 --- [categoria-ms] [http-nio-8084-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.categoria_ms.exception.ResourceNotFoundException: Categoría no encontrada con id: 1]
+2026-06-16T00:21:00.154-04:00  INFO 2136 --- [categoria-ms] [http-nio-8084-exec-4] c.e.c.service.CategoriaServiceImpl       : Buscando categoría por id=1
+2026-06-16T00:21:00.154-04:00  WARN 2136 --- [categoria-ms] [http-nio-8084-exec-4] c.e.c.service.CategoriaServiceImpl       : Categoría no encontrada con id=1
+2026-06-16T00:21:00.159-04:00  WARN 2136 --- [categoria-ms] [http-nio-8084-exec-4] c.e.c.exception.GlobalExceptionHandler   : ResourceNotFoundException: Categoría no encontrada con id: 1
+2026-06-16T00:21:00.161-04:00  WARN 2136 --- [categoria-ms] [http-nio-8084-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.categoria_ms.exception.ResourceNotFoundException: Categoría no encontrada con id: 1]
+2026-06-16T00:21:04.183-04:00  INFO 2136 --- [categoria-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:23:47.314-04:00  INFO 2136 --- [categoria-ms] [http-nio-8084-exec-5] c.e.c.service.CategoriaServiceImpl       : Listando todas las categorías
+2026-06-16T00:26:04.197-04:00  INFO 2136 --- [categoria-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:26:19.623-04:00  INFO 2136 --- [categoria-ms] [http-nio-8084-exec-10] c.e.c.service.CategoriaServiceImpl       : Listando todas las categorías
+2026-06-16T00:26:27.245-04:00  INFO 2136 --- [categoria-ms] [http-nio-8084-exec-1] c.e.c.service.CategoriaServiceImpl       : Buscando categoría por id=1
+2026-06-16T00:31:04.211-04:00  INFO 2136 --- [categoria-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

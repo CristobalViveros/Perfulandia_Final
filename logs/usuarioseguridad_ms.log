@@ -1,0 +1,136 @@
+2026-06-16T00:00:00.221-04:00  INFO 14872 --- [usuarioseguridad_ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:05:00.238-04:00  INFO 14872 --- [usuarioseguridad_ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:09:50.611-04:00  INFO 14872 --- [usuarioseguridad_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-16T00:09:50.614-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USUARIOSEGURIDAD_MS with eureka with status DOWN
+2026-06-16T00:09:50.616-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781582990616, current=DOWN, previous=UP]
+2026-06-16T00:09:50.617-04:00  INFO 14872 --- [usuarioseguridad_ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIOSEGURIDAD_MS/Pc-Toobal:usuarioseguridad_ms:8082: registering service...
+2026-06-16T00:09:50.633-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-16T00:09:50.637-04:00  INFO 14872 --- [usuarioseguridad_ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIOSEGURIDAD_MS/Pc-Toobal:usuarioseguridad_ms:8082 - registration status: 204
+2026-06-16T00:09:50.652-04:00  INFO 14872 --- [usuarioseguridad_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-16T00:09:50.659-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:09:50.667-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-16T00:09:50.675-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-16T00:09:50.676-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-16T00:09:53.684-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-16T00:09:53.700-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIOSEGURIDAD_MS/Pc-Toobal:usuarioseguridad_ms:8082 - deregister  status: 200
+2026-06-16T00:09:53.701-04:00  INFO 14872 --- [usuarioseguridad_ms] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-16T00:09:53.795-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] c.e.u.UsuarioSeguridadMsApplication      : Starting UsuarioSeguridadMsApplication using Java 21.0.10 with PID 14872 (C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final\usuarioSeguridad_ms\target\classes started by Moonlabpc in C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final)
+2026-06-16T00:09:53.796-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] c.e.u.UsuarioSeguridadMsApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-16T00:09:54.152-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-16T00:09:54.164-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2026-06-16T00:09:54.293-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d9bc1e3a-e299-36c7-b0a9-3feb1b8b4baa
+2026-06-16T00:09:54.368-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-06-16T00:09:54.369-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-16T00:09:54.370-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-16T00:09:54.417-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 619 ms
+2026-06-16T00:09:54.462-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-16T00:09:54.498-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-16T00:09:54.499-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-16T00:09:54.502-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@431b713c
+2026-06-16T00:09:54.502-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-16T00:09:54.504-04:00  WARN 14872 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-16T00:09:54.504-04:00  WARN 14872 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-16T00:09:54.505-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-16T00:09:54.544-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-16T00:09:54.590-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:09:54.689-04:00  WARN 14872 --- [usuarioseguridad-ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-16T00:09:54.766-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-16T00:09:55.000-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-16T00:09:55.041-04:00  WARN 14872 --- [usuarioseguridad-ms] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-16T00:09:55.111-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-16T00:09:55.114-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-16T00:09:55.118-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:09:55.123-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-16T00:09:55.126-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-16T00:09:55.127-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-16T00:09:55.128-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-16T00:09:55.129-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-16T00:09:55.130-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-16T00:09:55.130-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-16T00:09:55.149-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-16T00:09:55.151-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-16T00:09:55.152-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-16T00:09:55.152-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781582995152 with initial instances count: 9
+2026-06-16T00:09:55.153-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USUARIOSEGURIDAD-MS with eureka with status UP
+2026-06-16T00:09:55.155-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781582995155, current=UP, previous=STARTING]
+2026-06-16T00:09:55.161-04:00  INFO 14872 --- [usuarioseguridad-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIOSEGURIDAD-MS/Pc-Toobal:usuarioseguridad-ms:8082: registering service...
+2026-06-16T00:09:55.165-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-06-16T00:09:55.167-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-16T00:09:55.185-04:00  INFO 14872 --- [usuarioseguridad-ms] [restartedMain] c.e.u.UsuarioSeguridadMsApplication      : Started UsuarioSeguridadMsApplication in 1.426 seconds (process running for 2402.494)
+2026-06-16T00:09:55.189-04:00  WARN 14872 --- [usuarioseguridad-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-16T00:09:55.190-04:00  INFO 14872 --- [usuarioseguridad-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIOSEGURIDAD-MS/Pc-Toobal:usuarioseguridad-ms:8082 - registration status: 204
+2026-06-16T00:09:55.196-04:00  WARN 14872 --- [usuarioseguridad-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-16T00:18:03.391-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] c.e.u.UsuarioSeguridadMsApplication      : Starting UsuarioSeguridadMsApplication using Java 21.0.10 with PID 17632 (C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final\usuarioSeguridad_ms\target\classes started by Moonlabpc in C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final)
+2026-06-16T00:18:03.395-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] c.e.u.UsuarioSeguridadMsApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-16T00:18:03.470-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-16T00:18:03.470-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-16T00:18:04.546-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-16T00:18:04.688-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2026-06-16T00:18:04.995-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d9bc1e3a-e299-36c7-b0a9-3feb1b8b4baa
+2026-06-16T00:18:05.461-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-06-16T00:18:05.485-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-16T00:18:05.485-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-16T00:18:05.550-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2073 ms
+2026-06-16T00:18:05.736-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-16T00:18:05.784-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-16T00:18:06.288-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-16T00:18:06.332-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-16T00:18:06.478-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44d10115
+2026-06-16T00:18:06.478-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-16T00:18:06.520-04:00  WARN 17632 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-16T00:18:06.520-04:00  WARN 17632 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-16T00:18:06.544-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-16T00:18:07.254-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-16T00:18:07.345-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:18:07.437-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-16T00:18:07.723-04:00  WARN 17632 --- [usuarioseguridad-ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-16T00:18:07.881-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-16T00:18:08.585-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-16T00:18:08.631-04:00  WARN 17632 --- [usuarioseguridad-ms] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-16T00:18:08.669-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-16T00:18:08.708-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-16T00:18:08.713-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:18:08.723-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-16T00:18:08.723-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-16T00:18:08.723-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-16T00:18:08.724-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-16T00:18:08.724-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-16T00:18:08.724-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-16T00:18:08.724-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-16T00:18:09.055-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-16T00:18:09.055-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-16T00:18:09.055-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-16T00:18:09.065-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781583489065 with initial instances count: 10
+2026-06-16T00:18:09.070-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USUARIOSEGURIDAD-MS with eureka with status UP
+2026-06-16T00:18:09.070-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781583489070, current=UP, previous=STARTING]
+2026-06-16T00:18:09.072-04:00  INFO 17632 --- [usuarioseguridad-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIOSEGURIDAD-MS/Pc-Toobal:usuarioseguridad-ms:8082: registering service...
+2026-06-16T00:18:09.086-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-06-16T00:18:09.086-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-16T00:18:09.104-04:00  INFO 17632 --- [usuarioseguridad-ms] [restartedMain] c.e.u.UsuarioSeguridadMsApplication      : Started UsuarioSeguridadMsApplication in 6.22 seconds (process running for 6.93)
+2026-06-16T00:18:09.108-04:00  WARN 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-16T00:18:09.108-04:00  WARN 17632 --- [usuarioseguridad-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-16T00:18:09.120-04:00  INFO 17632 --- [usuarioseguridad-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USUARIOSEGURIDAD-MS/Pc-Toobal:usuarioseguridad-ms:8082 - registration status: 204
+2026-06-16T00:23:08.732-04:00  INFO 17632 --- [usuarioseguridad-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:28:08.740-04:00  INFO 17632 --- [usuarioseguridad-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

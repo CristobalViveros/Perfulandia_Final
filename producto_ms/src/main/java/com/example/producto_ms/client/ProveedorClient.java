@@ -9,7 +9,6 @@ import com.example.producto_ms.config.FeignClientConfig;
 
 @FeignClient(
         name = "proveedores-ms",
-        url = "${services.proveedores.url}",
         configuration = FeignClientConfig.class
 )
 public interface ProveedorClient {

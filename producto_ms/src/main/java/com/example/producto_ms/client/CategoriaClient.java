@@ -8,8 +8,7 @@ import com.example.producto_ms.clientdto.CategoriaClientDTO;
 import com.example.producto_ms.config.FeignClientConfig;
 
 @FeignClient(
-        name = "categorias-ms",
-        url = "${services.categorias.url}",
+        name = "categoria-ms",
         configuration = FeignClientConfig.class
 )
 public interface CategoriaClient {
