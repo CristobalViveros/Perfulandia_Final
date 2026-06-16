@@ -8,8 +8,7 @@ import com.example.boleta_ms.clientdto.PagoClientDTO;
 import com.example.boleta_ms.config.FeignClientConfig;
 
 @FeignClient(
-        name = "pagos-ms",
-        url = "${services.pagos.url}",
+        name = "pago-ms",
         configuration = FeignClientConfig.class
 )
 public interface PagoClient {

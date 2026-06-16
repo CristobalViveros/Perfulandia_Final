@@ -9,7 +9,6 @@ import com.example.envio_ms.config.FeignClientConfig;
 
 @FeignClient(
         name = "pedidos-ms",
-        url = "${services.pedidos.url}",
         configuration = FeignClientConfig.class
 )
 public interface PedidoClient {

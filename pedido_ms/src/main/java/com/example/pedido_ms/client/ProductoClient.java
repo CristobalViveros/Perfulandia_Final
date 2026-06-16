@@ -8,8 +8,7 @@ import com.example.pedido_ms.clientdto.ProductoClientDTO;
 import com.example.pedido_ms.config.FeignClientConfig;
 
 @FeignClient(
-        name = "productos-ms",
-        url = "${services.productos.url}",
+        name = "producto-ms",
         configuration = FeignClientConfig.class
 )
 public interface ProductoClient {

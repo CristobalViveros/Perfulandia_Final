@@ -1,24 +1,36 @@
-2026-06-11T12:37:12.567-04:00  INFO 18716 --- [envio_ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Starting EnvioMsApplication using Java 21.0.10 with PID 18716 (C:\Users\Duoc\Documents\GitHub\Perfulandia_Final\envio_ms\target\classes started by Duoc in C:\Users\Duoc\Documents\GitHub\Perfulandia_Final)
-2026-06-11T12:37:12.569-04:00 DEBUG 18716 --- [envio_ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-06-11T12:37:12.570-04:00  INFO 18716 --- [envio_ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : No active profile set, falling back to 1 default profile: "default"
-2026-06-11T12:37:12.626-04:00  INFO 18716 --- [envio_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-11T12:37:12.627-04:00  INFO 18716 --- [envio_ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-11T12:37:13.727-04:00  INFO 18716 --- [envio_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-11T12:37:13.796-04:00  INFO 18716 --- [envio_ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
-2026-06-11T12:37:14.029-04:00  INFO 18716 --- [envio_ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=66ffe8c6-860c-3fcc-8069-75c08199c347
-2026-06-11T12:37:14.805-04:00  INFO 18716 --- [envio_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
-2026-06-11T12:37:14.859-04:00  INFO 18716 --- [envio_ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-11T12:37:14.861-04:00  INFO 18716 --- [envio_ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-11T12:37:14.990-04:00  INFO 18716 --- [envio_ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2362 ms
-2026-06-11T12:37:15.285-04:00  INFO 18716 --- [envio_ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-11T12:37:15.412-04:00  INFO 18716 --- [envio_ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-11T12:37:15.844-04:00  INFO 18716 --- [envio_ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-11T12:37:15.879-04:00  INFO 18716 --- [envio_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-11T12:37:16.032-04:00  INFO 18716 --- [envio_ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cd45f08
-2026-06-11T12:37:16.035-04:00  INFO 18716 --- [envio_ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-11T12:37:16.079-04:00  WARN 18716 --- [envio_ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-11T12:37:16.082-04:00  WARN 18716 --- [envio_ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-11T12:37:16.112-04:00  INFO 18716 --- [envio_ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-16T00:04:40.057-04:00  INFO 17768 --- [envio_ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:08:15.486-04:00  INFO 17768 --- [envio_ms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-16T00:08:15.486-04:00  INFO 17768 --- [envio_ms] [Thread-31] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ENVIO_MS with eureka with status DOWN
+2026-06-16T00:08:15.486-04:00  INFO 17768 --- [envio_ms] [Thread-31] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781582895486, current=DOWN, previous=UP]
+2026-06-16T00:08:15.486-04:00  INFO 17768 --- [envio_ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ENVIO_MS/Pc-Toobal:envio_ms:8091: registering service...
+2026-06-16T00:08:15.486-04:00  INFO 17768 --- [envio_ms] [Thread-31] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-16T00:08:15.486-04:00  INFO 17768 --- [envio_ms] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-16T00:08:15.486-04:00  INFO 17768 --- [envio_ms] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:08:15.486-04:00  INFO 17768 --- [envio_ms] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-06-16T00:08:15.495-04:00  INFO 17768 --- [envio_ms] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-06-16T00:08:15.496-04:00  INFO 17768 --- [envio_ms] [Thread-31] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-16T00:08:15.496-04:00  INFO 17768 --- [envio_ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ENVIO_MS/Pc-Toobal:envio_ms:8091 - registration status: 204
+2026-06-16T00:08:15.497-04:00  INFO 17768 --- [envio_ms] [Thread-31] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-16T00:08:15.498-04:00  INFO 17768 --- [envio_ms] [Thread-31] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ENVIO_MS/Pc-Toobal:envio_ms:8091 - deregister  status: 200
+2026-06-16T00:08:15.499-04:00  INFO 17768 --- [envio_ms] [Thread-31] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-16T00:08:15.559-04:00  INFO 17768 --- [envio-ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Starting EnvioMsApplication using Java 21.0.10 with PID 17768 (C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final\envio_ms\target\classes started by Moonlabpc in C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final)
+2026-06-16T00:08:15.559-04:00 DEBUG 17768 --- [envio-ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-16T00:08:15.559-04:00  INFO 17768 --- [envio-ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-16T00:08:15.749-04:00  INFO 17768 --- [envio-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-16T00:08:15.749-04:00  INFO 17768 --- [envio-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-06-16T00:08:15.817-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d97e50f9-0898-3d9f-afbb-c5636a91bdcf
+2026-06-16T00:08:15.854-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-16T00:08:15.854-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-16T00:08:15.854-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-16T00:08:15.882-04:00  INFO 17768 --- [envio-ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 308 ms
+2026-06-16T00:08:15.910-04:00  INFO 17768 --- [envio-ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-16T00:08:15.937-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-16T00:08:15.937-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-06-16T00:08:15.937-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e0817c3
+2026-06-16T00:08:15.937-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-06-16T00:08:15.937-04:00  WARN 17768 --- [envio-ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-16T00:08:15.937-04:00  WARN 17768 --- [envio-ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-16T00:08:15.949-04:00  INFO 17768 --- [envio-ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -30,18 +42,101 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-11T12:37:16.790-04:00  INFO 18716 --- [envio_ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-11T12:37:16.904-04:00  INFO 18716 --- [envio_ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T12:37:16.990-04:00  INFO 18716 --- [envio_ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-11T12:37:17.321-04:00  WARN 18716 --- [envio_ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-11T12:37:17.531-04:00  INFO 18716 --- [envio_ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-06-11T12:37:18.569-04:00  INFO 18716 --- [envio_ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
-2026-06-11T12:37:18.583-04:00  INFO 18716 --- [envio_ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Started EnvioMsApplication in 6.552 seconds (process running for 7.366)
-2026-06-11T12:37:18.588-04:00  WARN 18716 --- [envio_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-06-11T12:37:18.589-04:00  WARN 18716 --- [envio_ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-06-11T12:37:25.598-04:00  INFO 18716 --- [envio_ms] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-11T12:37:25.599-04:00  INFO 18716 --- [envio_ms] [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-11T12:37:25.600-04:00  INFO 18716 --- [envio_ms] [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-11T12:37:25.907-04:00  INFO 18716 --- [envio_ms] [http-nio-8091-exec-1] c.e.envio_ms.service.EnvioServiceImpl    : Iniciando creación de envío para pedidoId=6 y clienteId=5
-2026-06-11T12:37:26.538-04:00  INFO 18716 --- [envio_ms] [http-nio-8091-exec-1] c.e.envio_ms.service.EnvioServiceImpl    : Envío creado correctamente con id=6
-2026-06-11T12:38:11.786-04:00  INFO 18716 --- [envio_ms] [http-nio-8091-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 248 ms
+2026-06-16T00:08:15.981-04:00  INFO 17768 --- [envio-ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-16T00:08:16.040-04:00  INFO 17768 --- [envio-ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:08:16.104-04:00  WARN 17768 --- [envio-ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-16T00:08:16.123-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'clientes-ms' URL not provided. Will try picking an instance via load-balancing.
+2026-06-16T00:08:16.144-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'pedidos-ms' URL not provided. Will try picking an instance via load-balancing.
+2026-06-16T00:08:16.185-04:00  INFO 17768 --- [envio-ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-16T00:08:16.299-04:00  INFO 17768 --- [envio-ms] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-16T00:08:16.311-04:00  WARN 17768 --- [envio-ms] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-16T00:08:16.321-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-16T00:08:16.324-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-16T00:08:16.328-04:00  INFO 17768 --- [envio-ms] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:08:16.330-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-16T00:08:16.334-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-16T00:08:16.353-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-16T00:08:16.360-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-16T00:08:16.387-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-16T00:08:16.403-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-16T00:08:16.407-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-16T00:08:16.456-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-16T00:08:16.457-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-16T00:08:16.457-04:00  INFO 17768 --- [envio-ms] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-16T00:08:16.458-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781582896458 with initial instances count: 9
+2026-06-16T00:08:16.461-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ENVIO-MS with eureka with status UP
+2026-06-16T00:08:16.470-04:00  INFO 17768 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781582896470, current=UP, previous=STARTING]
+2026-06-16T00:08:16.477-04:00  INFO 17768 --- [envio-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-16T00:08:16.486-04:00  INFO 17768 --- [envio-ms] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8091
+2026-06-16T00:08:16.494-04:00  INFO 17768 --- [envio-ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Started EnvioMsApplication in 0.951 seconds (process running for 2193.056)
+2026-06-16T00:08:16.497-04:00  WARN 17768 --- [envio-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-16T00:08:16.498-04:00  WARN 17768 --- [envio-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-16T00:08:16.495-04:00  INFO 17768 --- [envio-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ENVIO-MS/Pc-Toobal:envio-ms:8091: registering service...
+2026-06-16T00:08:16.521-04:00  INFO 17768 --- [envio-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ENVIO-MS/Pc-Toobal:envio-ms:8091 - registration status: 204
+2026-06-16T00:13:16.430-04:00  INFO 17768 --- [envio-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:16:36.701-04:00  INFO 15172 --- [envio-ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Starting EnvioMsApplication using Java 21.0.10 with PID 15172 (C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final\envio_ms\target\classes started by Moonlabpc in C:\Users\Moonlabpc\Documents\GitHub\Perfulandia_Final)
+2026-06-16T00:16:36.701-04:00 DEBUG 15172 --- [envio-ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-16T00:16:36.701-04:00  INFO 15172 --- [envio-ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-16T00:16:36.767-04:00  INFO 15172 --- [envio-ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-16T00:16:36.767-04:00  INFO 15172 --- [envio-ms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-16T00:16:37.793-04:00  INFO 15172 --- [envio-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-16T00:16:37.937-04:00  INFO 15172 --- [envio-ms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interface.
+2026-06-16T00:16:38.262-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d97e50f9-0898-3d9f-afbb-c5636a91bdcf
+2026-06-16T00:16:38.690-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-16T00:16:38.706-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-16T00:16:38.706-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-16T00:16:38.776-04:00  INFO 15172 --- [envio-ms] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2009 ms
+2026-06-16T00:16:38.947-04:00  INFO 15172 --- [envio-ms] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-16T00:16:39.010-04:00  INFO 15172 --- [envio-ms] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-16T00:16:39.465-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-16T00:16:39.496-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-16T00:16:39.639-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d5d9710
+2026-06-16T00:16:39.639-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-16T00:16:39.684-04:00  WARN 15172 --- [envio-ms] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-16T00:16:39.684-04:00  WARN 15172 --- [envio-ms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-16T00:16:39.711-04:00  INFO 15172 --- [envio-ms] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/perfulandia_db?useSSL=false&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: perfulandia_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-16T00:16:40.455-04:00  INFO 15172 --- [envio-ms] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-16T00:16:40.533-04:00  INFO 15172 --- [envio-ms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T00:16:40.605-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-16T00:16:40.914-04:00  WARN 15172 --- [envio-ms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-16T00:16:41.005-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'clientes-ms' URL not provided. Will try picking an instance via load-balancing.
+2026-06-16T00:16:41.047-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'pedidos-ms' URL not provided. Will try picking an instance via load-balancing.
+2026-06-16T00:16:41.187-04:00  INFO 15172 --- [envio-ms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-16T00:16:41.838-04:00  INFO 15172 --- [envio-ms] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-16T00:16:41.867-04:00  WARN 15172 --- [envio-ms] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-16T00:16:41.894-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-16T00:16:41.922-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-16T00:16:41.930-04:00  INFO 15172 --- [envio-ms] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:16:41.939-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-16T00:16:41.939-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-16T00:16:41.939-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-16T00:16:41.940-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-16T00:16:41.940-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-16T00:16:41.940-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-16T00:16:41.940-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-16T00:16:42.293-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-16T00:16:42.293-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-16T00:16:42.293-04:00  INFO 15172 --- [envio-ms] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-16T00:16:42.293-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781583402293 with initial instances count: 9
+2026-06-16T00:16:42.308-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ENVIO-MS with eureka with status UP
+2026-06-16T00:16:42.308-04:00  INFO 15172 --- [envio-ms] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781583402308, current=UP, previous=STARTING]
+2026-06-16T00:16:42.311-04:00  INFO 15172 --- [envio-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ENVIO-MS/Pc-Toobal:envio-ms:8091: registering service...
+2026-06-16T00:16:42.334-04:00  INFO 15172 --- [envio-ms] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-16T00:16:42.335-04:00  INFO 15172 --- [envio-ms] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8091
+2026-06-16T00:16:42.346-04:00  INFO 15172 --- [envio-ms] [restartedMain] c.example.envio_ms.EnvioMsApplication    : Started EnvioMsApplication in 6.117 seconds (process running for 6.812)
+2026-06-16T00:16:42.349-04:00  WARN 15172 --- [envio-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-16T00:16:42.350-04:00  WARN 15172 --- [envio-ms] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-16T00:16:42.354-04:00  INFO 15172 --- [envio-ms] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ENVIO-MS/Pc-Toobal:envio-ms:8091 - registration status: 204
+2026-06-16T00:21:41.944-04:00  INFO 15172 --- [envio-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-16T00:26:41.958-04:00  INFO 15172 --- [envio-ms] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

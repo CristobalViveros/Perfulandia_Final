@@ -9,7 +9,6 @@ import com.example.pedido_ms.config.FeignClientConfig;
 
 @FeignClient(
         name = "inventario-ms",
-        url = "${services.inventario.url}",
         configuration = FeignClientConfig.class
 )
 public interface InventarioClient {
