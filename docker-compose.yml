@@ -136,6 +136,7 @@ services:
         condition: service_started
       proveedores-ms:
         condition: service_started
+        
   pedidos-ms:
     build: ./pedido_ms
     container_name: pedidos-ms
