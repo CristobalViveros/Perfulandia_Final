@@ -136,6 +136,123 @@ services:
         condition: service_started
       proveedores-ms:
         condition: service_started
+  pedidos-ms:
+    build: ./pedido_ms
+    container_name: pedidos-ms
+    restart: always
+    ports:
+      - "8087:8087"
+    environment:
+      SPRING_APPLICATION_NAME: pedidos-ms
+      SERVER_PORT: 8087
+      SPRING_DATASOURCE_URL: "jdbc:mysql://mysql:3306/perfulandia_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+      clientes-ms:
+        condition: service_started
+      producto-ms:
+        condition: service_started
+      inventario-ms:
+        condition: service_started
+
+  pago-ms:
+    build: ./pago_ms
+    container_name: pago-ms
+    restart: always
+    ports:
+      - "8088:8088"
+    environment:
+      SPRING_APPLICATION_NAME: pago-ms
+      SERVER_PORT: 8088
+      SPRING_DATASOURCE_URL: "jdbc:mysql://mysql:3306/perfulandia_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+      pedidos-ms:
+        condition: service_started
+
+  boleta-ms:
+    build: ./boleta_ms
+    container_name: boleta-ms
+    restart: always
+    ports:
+      - "8090:8090"
+    environment:
+      SPRING_APPLICATION_NAME: boleta-ms
+      SERVER_PORT: 8090
+      SPRING_DATASOURCE_URL: "jdbc:mysql://mysql:3306/perfulandia_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+      clientes-ms:
+        condition: service_started
+      pedidos-ms:
+        condition: service_started
+      pago-ms:
+        condition: service_started
+
+  envio-ms:
+    build: ./envio_ms
+    container_name: envio-ms
+    restart: always
+    ports:
+      - "8091:8091"
+    environment:
+      SPRING_APPLICATION_NAME: envio-ms
+      SERVER_PORT: 8091
+      SPRING_DATASOURCE_URL: "jdbc:mysql://mysql:3306/perfulandia_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+      clientes-ms:
+        condition: service_started
+      pedidos-ms:
+        condition: service_started
+
+  usuarioseguridad-ms:
+    build: ./usuarioSeguridad_ms
+    container_name: usuarioseguridad-ms
+    restart: always
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_APPLICATION_NAME: usuarioseguridad-ms
+      SERVER_PORT: 8082
+      SPRING_DATASOURCE_URL: "jdbc:mysql://mysql:3306/perfulandia_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
 
 volumes:
   mysql_data:
